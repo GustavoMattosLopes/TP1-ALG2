@@ -1,0 +1,19 @@
+[0] OK - Estabelecimento sem nome | Rua DESEMBARGADOR REIS ALVES, 90, BAIRRO DAS INDUSTRIAS I, Belo Horizonte, MG, Brasil → -19.9589334, -44.0017603
+[1] OK - PIZZARIA E CHURRASCARIA VARANDA | Rua LUIZ PONGELUPE, 290, CARDOSO, Belo Horizonte, MG, Brasil → -20.0062900, -44.0100157
+[2] OK - RABBIT BURGER | Avenida RESSACA, 118, PADRE EUSTAQUIO, Belo Horizonte, MG, Brasil → -19.9177866, -43.9876481
+[3] OK - TATU REI DO ANGU A  BAHIANA | Rua DESEMBARGADOR RIBEIRO DA LUZ, 135, BARREIRO, Belo Horizonte, MG, Brasil → -19.9732823, -44.0141195
+[4] OK - ESPACO DA FEIJOADA | Avenida CRISTIANO MACHADO, 1950, CIDADE NOVA, Belo Horizonte, MG, Brasil → -19.8903695, -43.9282191
+[5] OK - Estabelecimento sem nome | Rua LUZIA SALOMAO, 50, MANTIQUEIRA, Belo Horizonte, MG, Brasil → -19.8027128, -43.9798377
+[6] OK - Estabelecimento sem nome | Rua BRAULIO GOMES NOGUEIRA, 1200, ITAIPU, Belo Horizonte, MG, Brasil → -19.9945782, -44.0464278
+[7] OK - RESTAURANTE NOVO SABOR | Rua DOS OTONI, 222, SANTA EFIGENIA, Belo Horizonte, MG, Brasil → -19.9264845, -43.9245162
+[8] ERRO - Estabelecimento sem nome | Avenida SOLFERINA RICCI PACE, 1301, CONJUNTO JATOBA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[9] OK - Estabelecimento sem nome | Rua SALINAS, 1547, SANTA TEREZA, Belo Horizonte, MG, Brasil → -19.9148029, -43.9230373
+[10] ERRO - Estabelecimento sem nome | Ala DAS FLORES, 8, VILA SUMARE, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[11] OK - PIZZAIOLO SAO GERALDO II | Rua MANGARATIBA, 390, SAO GERALDO, Belo Horizonte, MG, Brasil → -19.9016216, -43.9014570
+[12] OK - Estabelecimento sem nome | Avenida OIAPOQUE, 156, CENTRO, Belo Horizonte, MG, Brasil → -19.9131077, -43.9393344
+[13] OK - XICO DO CHURRASCO SAVASSI | Rua SERGIPE, 1360, SAVASSI, Belo Horizonte, MG, Brasil → -19.9382457, -43.9384554
+[14] OK - TOSCANINI CAFE | Avenida RAJA GABAGLIA, 2664, ESTORIL, Belo Horizonte, MG, Brasil → -19.9581626, -43.9570934
+[15] OK - Estabelecimento sem nome | Rua DOUTOR JOAO MIRANDA, 188, DONA CLARA, Belo Horizonte, MG, Brasil → -19.8612876, -43.9362088
+[16] OK - Estabelecimento sem nome | Avenida OIAPOQUE, 221, CENTRO, Belo Horizonte, MG, Brasil → -19.9134062, -43.9402868
+[17] OK - TITIA ZITA | Rua JOSE CLETO, 901, SANTA CRUZ, Belo Horizonte, MG, Brasil → -19.8765417, -43.9315160
+[18] OK - Estabelecimento sem nome | Rua DA BAHIA, 615, CENTRO, Belo Horizonte, MG, Brasil → -19.9214255, -43.9365262

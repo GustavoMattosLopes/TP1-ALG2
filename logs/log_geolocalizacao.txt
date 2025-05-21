@@ -1,0 +1,440 @@
+[0] OK - Estabelecimento sem nome | Rua DESEMBARGADOR REIS ALVES, 90, BAIRRO DAS INDUSTRIAS I, Belo Horizonte, MG, Brasil → -19.9589334, -44.0017603
+[1] OK - PIZZARIA E CHURRASCARIA VARANDA | Rua LUIZ PONGELUPE, 290, CARDOSO, Belo Horizonte, MG, Brasil → -20.0062900, -44.0100157
+[2] OK - RABBIT BURGER | Avenida RESSACA, 118, PADRE EUSTAQUIO, Belo Horizonte, MG, Brasil → -19.9177866, -43.9876481
+[3] OK - TATU REI DO ANGU A  BAHIANA | Rua DESEMBARGADOR RIBEIRO DA LUZ, 135, BARREIRO, Belo Horizonte, MG, Brasil → -19.9732823, -44.0141195
+[4] OK - ESPACO DA FEIJOADA | Avenida CRISTIANO MACHADO, 1950, CIDADE NOVA, Belo Horizonte, MG, Brasil → -19.8903695, -43.9282191
+[5] OK - Estabelecimento sem nome | Rua LUZIA SALOMAO, 50, MANTIQUEIRA, Belo Horizonte, MG, Brasil → -19.8027128, -43.9798377
+[6] OK - Estabelecimento sem nome | Rua BRAULIO GOMES NOGUEIRA, 1200, ITAIPU, Belo Horizonte, MG, Brasil → -19.9945782, -44.0464278
+[7] OK - RESTAURANTE NOVO SABOR | Rua DOS OTONI, 222, SANTA EFIGENIA, Belo Horizonte, MG, Brasil → -19.9264845, -43.9245162
+[8] ERRO - Estabelecimento sem nome | Avenida SOLFERINA RICCI PACE, 1301, CONJUNTO JATOBA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[9] OK - Estabelecimento sem nome | Rua SALINAS, 1547, SANTA TEREZA, Belo Horizonte, MG, Brasil → -19.9148029, -43.9230373
+[10] ERRO - Estabelecimento sem nome | Ala DAS FLORES, 8, VILA SUMARE, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[11] OK - PIZZAIOLO SAO GERALDO II | Rua MANGARATIBA, 390, SAO GERALDO, Belo Horizonte, MG, Brasil → -19.8997465, -43.9020946
+[12] OK - Estabelecimento sem nome | Avenida OIAPOQUE, 156, CENTRO, Belo Horizonte, MG, Brasil → -19.9131077, -43.9393344
+[13] OK - XICO DO CHURRASCO SAVASSI | Rua SERGIPE, 1360, SAVASSI, Belo Horizonte, MG, Brasil → -19.9382457, -43.9384554
+[14] OK - TOSCANINI CAFE | Avenida RAJA GABAGLIA, 2664, ESTORIL, Belo Horizonte, MG, Brasil → -19.9565487, -43.9576764
+[15] OK - Estabelecimento sem nome | Rua DOUTOR JOAO MIRANDA, 188, DONA CLARA, Belo Horizonte, MG, Brasil → -19.8612876, -43.9362088
+[16] OK - Estabelecimento sem nome | Avenida OIAPOQUE, 221, CENTRO, Belo Horizonte, MG, Brasil → -19.9137888, -43.9392430
+[17] OK - TITIA ZITA | Rua JOSE CLETO, 901, SANTA CRUZ, Belo Horizonte, MG, Brasil → -19.8765417, -43.9315160
+[18] OK - Estabelecimento sem nome | Rua DA BAHIA, 615, CENTRO, Belo Horizonte, MG, Brasil → -19.9234439, -43.9370287
+[19] OK - Estabelecimento sem nome | Rua DA BAHIA, 1403, LOURDES, Belo Horizonte, MG, Brasil → -19.9387179, -43.9412853
+[20] OK - CASA CHEIA | Avenida AUGUSTO DE LIMA, 744, CENTRO, Belo Horizonte, MG, Brasil → -19.9225815, -43.9430243
+[21] OK - SUNTOR RESTAURANTE & CAFETERIA | Rua WILSON ROCHA LIMA, 80, SANTA LUCIA, Belo Horizonte, MG, Brasil → -19.9704174, -43.9556202
+[22] OK - CHURRASCARIA SANTA AMELIA | Avenida GUARAPARI, 1166, SANTA AMELIA, Belo Horizonte, MG, Brasil → -19.8460286, -43.9765992
+[23] OK - Estabelecimento sem nome | Avenida CRISTIANO MACHADO, 5480, SAO PAULO, Belo Horizonte, MG, Brasil → -19.8680174, -43.9280622
+[24] OK - Estabelecimento sem nome | Rua DOS AIMORES, 1065, BOA VIAGEM, Belo Horizonte, MG, Brasil → -19.9292607, -43.9344575
+[25] OK - Estabelecimento sem nome | Rua ESMERALDA, 604, PRADO, Belo Horizonte, MG, Brasil → -19.9267616, -43.9618748
+[26] OK - Estabelecimento sem nome | Rua LAGOA DA PRATA, 480, SALGADO FILHO, Belo Horizonte, MG, Brasil → -19.9380495, -43.9820687
+[27] OK - RESTAURANTE DO ZEQUINHA | Avenida OLEGARIO MACIEL, 714, CENTRO, Belo Horizonte, MG, Brasil → -19.9217543, -43.9447993
+[28] OK - Estabelecimento sem nome | Rua ICANA, 33, NOVA SUISSA, Belo Horizonte, MG, Brasil → -19.9364670, -43.9754420
+[29] OK - Estabelecimento sem nome | Avenida OLINTO MEIRELES, 316, BARREIRO, Belo Horizonte, MG, Brasil → -19.9741654, -44.0131353
+[30] OK - Estabelecimento sem nome | Rua SAO MATIAS, 143, SAO SALVADOR, Belo Horizonte, MG, Brasil → -19.8910707, -44.0140070
+[31] OK - Estabelecimento sem nome | Rua ALAGOAS, 763, SAVASSI, Belo Horizonte, MG, Brasil → -19.9378158, -43.9368155
+[32] OK - PIZZARELLA | Avenida OLEGARIO MACIEL, 2280, SANTO AGOSTINHO, Belo Horizonte, MG, Brasil → -19.9339732, -43.9484406
+[33] OK - Estabelecimento sem nome | Rua PINHEIRO CHAGAS, 406, BARREIRO, Belo Horizonte, MG, Brasil → -19.9806850, -44.0128009
+[34] OK - RESTAURANTE CAMPUS SAUDE | Avenida PROFESSOR ALFREDO BALENA, 190, SANTA EFIGENIA, Belo Horizonte, MG, Brasil → -19.9241951, -43.9294103
+[35] OK - RESTAURANTE FACULDADE DE DIREITO | Avenida ALVARES CABRAL, 211, CENTRO, Belo Horizonte, MG, Brasil → -19.9248993, -43.9359055
+[36] OK - RESTAURANTE CAMPUS PAMPULHA-SETORIAL II | Avenida PRESIDENTE ANTONIO CARLOS, 6627, CAMPUS UFMG, Belo Horizonte, MG, Brasil → -19.8630917, -43.9597997
+[37] OK - RESTAURANTE CAMPUS PAMPULHA-SETORIAL I | Avenida PRESIDENTE ANTONIO CARLOS, 6627, CAMPUS UFMG, Belo Horizonte, MG, Brasil → -19.8630917, -43.9597997
+[38] OK - Estabelecimento sem nome | Rua DA BAHIA, 1172, CENTRO, Belo Horizonte, MG, Brasil → -19.9234439, -43.9370287
+[39] ERRO - Estabelecimento sem nome | Rodovia ANEL RODOVIARIO CELSO MELLO AZEVEDO, 1195, JOAO PINHEIRO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[40] OK - Estabelecimento sem nome | Rua CORONEL PEDRO PAULO PENIDO, 495, CIDADE NOVA, Belo Horizonte, MG, Brasil → -19.8875940, -43.9257948
+[41] OK - Estabelecimento sem nome | Rua DOS TUPIS, 871, CENTRO, Belo Horizonte, MG, Brasil → -19.9215698, -43.9392637
+[42] OK - Estabelecimento sem nome | Rua RIO DE JANEIRO, 630, CENTRO, Belo Horizonte, MG, Brasil → -19.9221732, -43.9394511
+[43] OK - Estabelecimento sem nome | Rua GERALDO TEIXEIRA DA COSTA, 212, FLORESTA, Belo Horizonte, MG, Brasil → -19.9196406, -43.9315824
+[44] OK - BAR DO SALOMAO | Rua DO OURO, 895, SERRA, Belo Horizonte, MG, Brasil → -19.9403611, -43.9200245
+[45] OK - Estabelecimento sem nome | Rua DOS GUARANIS, 560, CENTRO, Belo Horizonte, MG, Brasil → -19.9150366, -43.9420377
+[46] OK - CAFE PALHARES | Rua DOS TUPINAMBAS, 638, CENTRO, Belo Horizonte, MG, Brasil → -19.9178920, -43.9382620
+[47] OK - PIZZARIA OPCAO | Rua DOS ASTECAS, 2670, SANTA MONICA, Belo Horizonte, MG, Brasil → -19.8299231, -43.9791637
+[48] OK - Estabelecimento sem nome | Rua JOSE AMERICO DE ALMEIDA, 411, CAMARGOS, Belo Horizonte, MG, Brasil → -19.9429787, -44.0140797
+[49] OK - Estabelecimento sem nome | Avenida PADRE JOSE MAURICIO, 723, VISTA ALEGRE, Belo Horizonte, MG, Brasil → -19.9520894, -43.9926409
+[50] OK - Estabelecimento sem nome | Rua CRACOVIA, 87, EUROPA, Belo Horizonte, MG, Brasil → -19.7993258, -43.9678373
+[51] OK - Estabelecimento sem nome | Rua OITO, 63, VISTA DO SOL, Belo Horizonte, MG, Brasil → -19.8483678, -43.8902100
+[52] OK - Estabelecimento sem nome | Rua CONDE DE LINHARES, 725, CORACAO DE JESUS, Belo Horizonte, MG, Brasil → -19.9435392, -43.9496401
+[53] OK - Estabelecimento sem nome | Avenida CRISTOVAO COLOMBO, 550, SAVASSI, Belo Horizonte, MG, Brasil → -19.9354207, -43.9369552
+[54] OK - ABROLHOS | Rua ARAGUARI, 1443, SANTO AGOSTINHO, Belo Horizonte, MG, Brasil → -19.9304115, -43.9513723
+[55] OK - Estabelecimento sem nome | Rua CARANGOLA, 358, SANTO ANTONIO, Belo Horizonte, MG, Brasil → -19.9425929, -43.9424838
+[56] OK - LE PETIT EVENTOS | Rua MANOEL ELIAS DE AGUIAR, 125, OURO PRETO, Belo Horizonte, MG, Brasil → -19.8741165, -43.9883188
+[57] OK - Estabelecimento sem nome | Rua ANTONIO DE ALBUQUERQUE, 395, SAVASSI, Belo Horizonte, MG, Brasil → -19.9392106, -43.9311759
+[58] OK - Estabelecimento sem nome | Avenida GETULIO VARGAS, 286, FUNCIONARIOS, Belo Horizonte, MG, Brasil → -19.9331468, -43.9267326
+[59] OK - Estabelecimento sem nome | Avenida AUGUSTO DE LIMA, 744, CENTRO, Belo Horizonte, MG, Brasil → -19.9225815, -43.9430243
+[60] OK - Estabelecimento sem nome | Rua AMERICO MARTINS DA COSTA, 431, MINASLANDIA, Belo Horizonte, MG, Brasil → -19.8526533, -43.9271284
+[61] OK - Estabelecimento sem nome | Avenida ABILIO MACHADO, 1867, GLORIA, Belo Horizonte, MG, Brasil → -19.9084384, -43.9986218
+[62] OK - Estabelecimento sem nome | Rua DORES DO INDAIA, 409, SANTA TEREZA, Belo Horizonte, MG, Brasil → -19.9158524, -43.9105711
+[63] OK - Estabelecimento sem nome | Rua FERNANDES TOURINHO, 503, SAVASSI, Belo Horizonte, MG, Brasil → -19.9387593, -43.9395336
+[64] ERRO - Estabelecimento sem nome | Rodovia BR TREZENTOS E CINQUENTA E SEIS, 3049, BELVEDERE, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[65] OK - Estabelecimento sem nome | Rodovia ANEL RODOVIARIO CELSO MELLO AZEVEDO, 28500, JARDIM VITORIA, Belo Horizonte, MG, Brasil → -19.8542101, -43.8907103
+[66] OK - EXPRESSA GULA | Avenida AMAZONAS, 717, CENTRO, Belo Horizonte, MG, Brasil → -19.9185571, -43.9378025
+[67] OK - DUCARMO SELF SERVICE LTDA | Rua MATO GROSSO, 960, SANTO AGOSTINHO, Belo Horizonte, MG, Brasil → -19.9253573, -43.9486157
+[68] OK - GRAOS DA TERRA | Rua CLAUDIO MANOEL, 463, SAVASSI, Belo Horizonte, MG, Brasil → -19.9334519, -43.9334767
+[69] OK - Estabelecimento sem nome | Rua CAXAMBU, 37, LAGOINHA, Belo Horizonte, MG, Brasil → -19.9057636, -43.9455982
+[70] OK - ALIMENDES | Rua COBRE, 200, CRUZEIRO, Belo Horizonte, MG, Brasil → -19.9435634, -43.9253820
+[71] OK - Estabelecimento sem nome | Rua PADRE TIAGO DE ALMEIDA, 311, CAMARGOS, Belo Horizonte, MG, Brasil → -19.9395228, -44.0211789
+[72] OK - PIZZA-CREK | Avenida AGGEO PIO SOBRINHO, 420, BURITIS, Belo Horizonte, MG, Brasil → -19.9765872, -43.9773697
+[73] ERRO - RESTAURANTE MESA DE MINAS | Rua SENADOR LIMA GUIMARAES, 531, OLHOS D'AGUA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[74] OK - BANQUETE MINEIRO | Avenida OLEGARIO MACIEL, 283, CENTRO, Belo Horizonte, MG, Brasil → -19.9154221, -43.9431634
+[75] OK - BONECA DE LILI | Avenida DO CONTORNO, 1468, FLORESTA, Belo Horizonte, MG, Brasil → -19.9158410, -43.9275689
+[76] OK - Estabelecimento sem nome | Rua PARU, 1067, NOVA FLORESTA, Belo Horizonte, MG, Brasil → -19.8895086, -43.9352269
+[77] OK - Estabelecimento sem nome | Rua BERNARDO GUIMARAES, 2394, SANTO AGOSTINHO, Belo Horizonte, MG, Brasil → -19.9274866, -43.9471836
+[78] OK - Estabelecimento sem nome | Rua SAPUCAI, 429, FLORESTA, Belo Horizonte, MG, Brasil → -19.9162434, -43.9322717
+[79] OK - Estabelecimento sem nome | Avenida OLEGARIO MACIEL, 1600, SANTO AGOSTINHO, Belo Horizonte, MG, Brasil → -19.9281198, -43.9473471
+[80] OK - D'ARTAGNAN | Rua TOMAZ GONZAGA, 593, LOURDES, Belo Horizonte, MG, Brasil → -19.9327796, -43.9417401
+[81] OK - ALVARENGA GLUTEN FREE | Rua ALVARENGA PEIXOTO, 1207, SANTO AGOSTINHO, Belo Horizonte, MG, Brasil → -19.9298142, -43.9482856
+[82] OK - BELLA VENEZIA | Praça DAS CONSTELACOES, 143, SANTA LUCIA, Belo Horizonte, MG, Brasil → -19.9615408, -43.9462266
+[83] OK - Estabelecimento sem nome | Rua DOS CANOEIROS, 261, SANTA MONICA, Belo Horizonte, MG, Brasil → -19.8292634, -43.9770421
+[84] OK - RESTAURANTE LILEGAL | Rua ANORI, 5, SAO GABRIEL, Belo Horizonte, MG, Brasil → -19.8541789, -43.9165837
+[85] OK - Estabelecimento sem nome | Avenida LUIZ PAULO FRANCO, 420, BELVEDERE, Belo Horizonte, MG, Brasil → -19.9729790, -43.9373734
+[86] OK - Estabelecimento sem nome | Rua DO URUGUAI, 719, SION, Belo Horizonte, MG, Brasil → -19.9524107, -43.9313009
+[87] OK - Estabelecimento sem nome | Avenida GETULIO VARGAS, 823, SAVASSI, Belo Horizonte, MG, Brasil → -19.9358885, -43.9310989
+[88] OK - Estabelecimento sem nome | Avenida LUIZ PAULO FRANCO, 721, BELVEDERE, Belo Horizonte, MG, Brasil → -19.9729790, -43.9373734
+[89] OK - Estabelecimento sem nome | Rua CURITIBA, 2069, LOURDES, Belo Horizonte, MG, Brasil → -19.9288280, -43.9440502
+[90] OK - Estabelecimento sem nome | Rua MARCOS ANTONIO CAVANIS, 60, BRAUNAS, Belo Horizonte, MG, Brasil → -19.8467513, -44.0076906
+[91] OK - COZINHA MINEIRA | Rua DOS GOITACAZES, 376, CENTRO, Belo Horizonte, MG, Brasil → -19.9226105, -43.9402760
+[92] OK - DONNA MARGHERITA | Avenida CARANDAI, 840, SANTA EFIGENIA, Belo Horizonte, MG, Brasil → -19.9274923, -43.9301419
+[93] OK - JAO BAR | Rua CAMPOS SALES, 380, CALAFATE, Belo Horizonte, MG, Brasil → -19.9274167, -43.9771468
+[94] OK - Estabelecimento sem nome | Avenida AFONSO PENA, 3745, SERRA, Belo Horizonte, MG, Brasil → -19.9403317, -43.9253539
+[95] ERRO - HANGAR GOURMET | Rua DOS HANGARES, 11, AEROPORTO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[96] OK - DRUMMOND PIZZA | Avenida FLAVIO DOS SANTOS, 335, FLORESTA, Belo Horizonte, MG, Brasil → -19.9120052, -43.9249084
+[97] OK - Estabelecimento sem nome | Rua DO LEBLON, 8, URCA, Belo Horizonte, MG, Brasil → -19.8710626, -44.0163320
+[98] OK - Estabelecimento sem nome | Rua DOM VICOSO, 368, PADRE EUSTAQUIO, Belo Horizonte, MG, Brasil → -19.9224975, -43.9735965
+[99] OK - POMAR DO ACAI RESTAURANTE E LANCHONETE | Rua DOS OTONI, 710, SANTA EFIGENIA, Belo Horizonte, MG, Brasil → -19.9253280, -43.9289869
+[100] OK - RESTAURANTE SABOR DE MINAS | Rua DOUTOR CRISTIANO REZENDE, 2650, ARAGUAIA, Belo Horizonte, MG, Brasil → -19.9931948, -44.0011274
+[101] ERRO - Estabelecimento sem nome | Rua DO MARINHOS, 58, NOVA SUISSA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[102] OK - UM TREM NA CHAPA | Avenida CRISTIANO MACHADO, 1950, CIDADE NOVA, Belo Horizonte, MG, Brasil → -19.8903695, -43.9282191
+[103] OK - UM TREM NA CHAPA | Avenida CRISTIANO MACHADO, 1950, CIDADE NOVA, Belo Horizonte, MG, Brasil → -19.8903695, -43.9282191
+[104] OK - Estabelecimento sem nome | Avenida ANTONIO ABRAHAO CARAM, 900, SAO JOSE, Belo Horizonte, MG, Brasil → -19.8593307, -43.9599031
+[105] OK - RESTAURANTE MANGUEIRA | Rua ITAJUBA, 913, FLORESTA, Belo Horizonte, MG, Brasil → -19.9111217, -43.9295317
+[106] ERRO - Estabelecimento sem nome | Rua JULIO RODRIGUES DE MIRANDA, 140, CONFISCO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[107] OK - Estabelecimento sem nome | Rua PONTA GROSSA, 36, ARAGUAIA, Belo Horizonte, MG, Brasil → -19.9857725, -43.9983065
+[108] OK - Estabelecimento sem nome | Rua CACATUA, 422, FLAVIO MARQUES LISBOA, Belo Horizonte, MG, Brasil → -19.9953939, -44.0011457
+[109] OK - ODEON LANCHES | Avenida DO CONTORNO, 1550, FLORESTA, Belo Horizonte, MG, Brasil → -19.9137146, -43.9289182
+[110] OK - Estabelecimento sem nome | Rua JOSE BENJAMIM DE CASTRO, 70, CAMPO ALEGRE, Belo Horizonte, MG, Brasil → -19.8326125, -43.9458751
+[111] OK - Estabelecimento sem nome | Rua CAMBUQUIRA, 1495, CARLOS PRATES, Belo Horizonte, MG, Brasil → -19.9119464, -43.9694533
+[112] OK - PIZZARIA DO PRETO | Avenida SENADOR LEVINDO COELHO, 4852, INDEPENDENCIA, Belo Horizonte, MG, Brasil → -20.0160058, -44.0318849
+[113] OK - Estabelecimento sem nome | Rua MARMORE, 787, SANTA TEREZA, Belo Horizonte, MG, Brasil → -19.9162948, -43.9182816
+[114] OK - JEF BAR | Avenida MANOEL SALLES BARBOSA, 65, CARDOSO, Belo Horizonte, MG, Brasil → -20.0010107, -44.0084828
+[115] OK - RESTAURANTE E LANCHONETE MAOS DE MINAS | Avenida JOAQUIM ABEL COELHO, 55, MANTIQUEIRA, Belo Horizonte, MG, Brasil → -19.7837407, -43.9823749
+[116] OK - Estabelecimento sem nome | Avenida OLEGARIO MACIEL, 1276, SANTO AGOSTINHO, Belo Horizonte, MG, Brasil → -19.9257968, -43.9460687
+[117] OK - SUSHI UP SILVA LOBO | Avenida SILVA LOBO, 1773, GRAJAU, Belo Horizonte, MG, Brasil → -19.9429866, -43.9636656
+[118] OK - Estabelecimento sem nome | Rua SANTA CEIA, 61, JARDIM SAO JOSE, Belo Horizonte, MG, Brasil → -19.9026157, -43.9942378
+[119] OK - BALAIO | Rua MARILIA DE DIRCEU, 161, LOURDES, Belo Horizonte, MG, Brasil → -19.9341541, -43.9461057
+[120] OK - Estabelecimento sem nome | Rua JOSE FELIX MARTINS, 925, MANTIQUEIRA, Belo Horizonte, MG, Brasil → -19.7937604, -43.9854096
+[121] OK - Estabelecimento sem nome | Rua SERRA NEGRA, 1876, NOVA ESPERANCA, Belo Horizonte, MG, Brasil → -19.9014323, -43.9538009
+[122] OK - SAATORE RISTORANTE | Avenida OTACILIO NEGRAO DE LIMA, 1624, SAO LUIZ, Belo Horizonte, MG, Brasil → -19.8561267, -43.9765220
+[123] OK - Estabelecimento sem nome | Rua TEREZINHA LOPES DE AZEVEDO, 115, PLANALTO, Belo Horizonte, MG, Brasil → -19.8326558, -43.9416415
+[124] OK - PIZZARIA DELLA FIORE | Rua CONGONHAS, 895, SANTO ANTONIO, Belo Horizonte, MG, Brasil → -19.9434480, -43.9409148
+[125] OK - CASA AMORA | Rua PARAIBA, 941, SAVASSI, Belo Horizonte, MG, Brasil → -19.9346515, -43.9332846
+[126] ERRO - Estabelecimento sem nome | Praça RIO BRANCO, 100, CENTRO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[127] OK - OS PIRATAS PIZZARIA | Rua KEPLER, 441, SANTA LUCIA, Belo Horizonte, MG, Brasil → -19.9636285, -43.9492036
+[128] OK - Estabelecimento sem nome | Avenida GUARAPARI, 176, SANTA AMELIA, Belo Horizonte, MG, Brasil → -19.8460286, -43.9765992
+[129] OK - Estabelecimento sem nome | Avenida AMAZONAS, 2515, SANTO AGOSTINHO, Belo Horizonte, MG, Brasil → -19.9289019, -43.9557481
+[130] OK - Estabelecimento sem nome | Rua SERGIPE, 146, BOA VIAGEM, Belo Horizonte, MG, Brasil → -19.9307639, -43.9363336
+[131] OK - DONA MARIA RESTAURANTE, PIZZARIA E HAMBURGUERIA | Rua BOLIVAR MINEIRO, 38, DONA CLARA, Belo Horizonte, MG, Brasil → -19.8599232, -43.9436798
+[132] OK - CELEIRO GRILL | Avenida AUGUSTO DE LIMA, 1540, BARRO PRETO, Belo Horizonte, MG, Brasil → -19.9201335, -43.9561147
+[133] OK - Estabelecimento sem nome | Rua DOS VETERINARIOS, 411, ALIPIO DE MELO, Belo Horizonte, MG, Brasil → -19.8903648, -44.0062029
+[134] OK - ESPETINHO E ACAI DO PAI | Rua DAS CLARINETAS, 65, CONJUNTO CALIFORNIA I, Belo Horizonte, MG, Brasil → -19.9243867, -44.0064470
+[135] ERRO - CANTINHO DA PRODUCAO | Avenida ANTONIO HENRIQUE ALVES, 551, CAICARA ADELAIDE, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[136] OK - RESTAURANTE E PIZZARIA MOURAO | Rua DOUTOR CRISTIANO REZENDE, 65, BAIRRO NOVO DAS INDUSTRIAS, Belo Horizonte, MG, Brasil → -19.9704056, -43.9921381
+[137] OK - RESTAURANTE COZINHA DO SABOR | Rua MATO GROSSO, 631, BARRO PRETO, Belo Horizonte, MG, Brasil → -19.9208974, -43.9473611
+[138] OK - Estabelecimento sem nome | Rua THEODORO BONFIM, 140, TAQUARIL, Belo Horizonte, MG, Brasil → -19.9158205, -43.8836548
+[139] OK - PONTO CERTO ESTRELA | Rua MARIA BORBOLETA, 1057, MANTIQUEIRA, Belo Horizonte, MG, Brasil → -19.7976514, -43.9765281
+[140] OK - M.D.E - ALIMENTACAO | Avenida DOM PEDRO II, 2573, CARLOS PRATES, Belo Horizonte, MG, Brasil → -19.9099530, -43.9562861
+[141] ERRO - Estabelecimento sem nome | Rua JONAS LINS DE OLIVEIRA, 96, DONA CLARA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[142] OK - SAVA PUB | Avenida CRISTOVAO COLOMBO, 282, SAVASSI, Belo Horizonte, MG, Brasil → -19.9374698, -43.9356239
+[143] OK - LU LANCHES | Avenida AMINTAS JACQUES DE MORAES, 1150, COQUEIROS, Belo Horizonte, MG, Brasil → -19.9025353, -44.0196824
+[144] OK - RESTAURANTE EUROVILE | Rua JOAO DE DEUS MATOS, 12, IPIRANGA, Belo Horizonte, MG, Brasil → -19.8859128, -43.9346937
+[145] OK - RESTAURANTE VARIEDADES | Rua DIABASE, 200, PRADO, Belo Horizonte, MG, Brasil → -19.9207425, -43.9613139
+[146] OK - DB CIDADE NOVA | Rua ALBERTO CINTRA, 32, UNIAO, Belo Horizonte, MG, Brasil → -19.8845105, -43.9292189
+[147] OK - SUSHIMEIYO | Rua PIAUI, 1594, FUNCIONARIOS, Belo Horizonte, MG, Brasil → -19.9343945, -43.9276279
+[148] OK - Estabelecimento sem nome | Rua EXPEDICIONARIO PAULO DE SOUZA, 180, URCA, Belo Horizonte, MG, Brasil → -19.8709219, -44.0145578
+[149] OK - PEDRO HENRIQUE DURAES DE SOUZA | Rua JUDITH BINATTI, 53, LIBERDADE, Belo Horizonte, MG, Brasil → -19.8619829, -43.9546774
+[150] ERRO - CIA DO SUSHI BH | Rua BENJAMIM QUADROS, 266, PARAISO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[151] ERRO - Estabelecimento sem nome | Rua ESTELA BORGES NORATO, 301, BAIRRO DAS INDUSTRIAS I, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[152] OK - MASSAS E SABORES GOURMETS | Rua FELIPE DE MELO, 47, UNIAO, Belo Horizonte, MG, Brasil → -19.8785258, -43.9275680
+[153] OK - UAI PIZZA | Rua SERENATA, 116, SANTANA DO CAFEZAL, Belo Horizonte, MG, Brasil → -19.9356489, -43.9102774
+[154] OK - Estabelecimento sem nome | Rua PIUM I, 685, ANCHIETA, Belo Horizonte, MG, Brasil → -19.9475492, -43.9312652
+[155] OK - NOSTALGICOS BURGUER | Rua DOUTOR ALEXANDRE DRUMOND, 117, INDEPENDENCIA, Belo Horizonte, MG, Brasil → -20.0156673, -44.0259960
+[156] OK - ILHA DO CAMALEAO | Avenida PORTUGAL, 2138, JARDIM ATLANTICO, Belo Horizonte, MG, Brasil → -19.8442213, -43.9713993
+[157] OK - BURGUER LANCHES | Rua JUVENTUDE, 368, CEU AZUL, Belo Horizonte, MG, Brasil → -19.8211138, -43.9983931
+[158] OK - UIARA LOBATO MACEDO | Rua DAS CANOAS, 220, BETANIA, Belo Horizonte, MG, Brasil → -19.9610321, -43.9898691
+[159] OK - KEITY SANTOS | Rua RIO CLARO, 180, PRADO, Belo Horizonte, MG, Brasil → -19.9245643, -43.9619318
+[160] ERRO - LOUCOS POR LANCHES | Rua CARLOS ESTEVAO, 112, TUPI A, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[161] OK - PIZZAS & LINGUICAS & FRANGOS DA ROCA | Beco J, 50, VILA FORMOSA, Belo Horizonte, MG, Brasil → -19.9992168, -44.0307575
+[162] OK - ZUCHK DELIVERY | Rua ARAUJO VIANA, 101, SALGADO FILHO, Belo Horizonte, MG, Brasil → -19.9390691, -43.9839006
+[163] OK - CANTINA DO BRUNIM | Rua SILVA XAVIER, 123, JARDIM LEBLON, Belo Horizonte, MG, Brasil → -19.8268443, -43.9866846
+[164] OK - STUDY LA FIESTA BUFFET | Rua SOARES DE ARAUJO, 23, SANTA CRUZ, Belo Horizonte, MG, Brasil → -19.8782667, -43.9357789
+[165] OK - DISTRIBUIDORA JR | Rua EDIVALDO JARDIM, 247, JARDIM DOS COMERCIARIOS, Belo Horizonte, MG, Brasil → -19.7941947, -43.9642027
+[166] OK - DO BECO | Beco DOZE DE OUTUBRO, 12, VILA SANTA MONICA, Belo Horizonte, MG, Brasil → -19.8172170, -43.9944388
+[167] OK - 365 BURGUER | Rua TEIXEIRA MAGALHAES, 33, FLORESTA, Belo Horizonte, MG, Brasil → -19.9144270, -43.9294294
+[168] OK - Estabelecimento sem nome | Rua ANTONIO ALEIXO, 20, LOURDES, Belo Horizonte, MG, Brasil → -19.9343250, -43.9401440
+[169] ERRO - MM LANCHES | Rua EMBAIXADOR AFRANIO DE MELO FRANCO, 133, VILA AEROPORTO JARAGUA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[170] OK - Estabelecimento sem nome | Rua ERE, 206, PRADO, Belo Horizonte, MG, Brasil → -19.9219882, -43.9595754
+[171] OK - RESTAURANTE DONA DIKA | Avenida DO CONTORNO, 2107, SANTA TEREZA, Belo Horizonte, MG, Brasil → -19.9206090, -43.9244641
+[172] OK - SABORES NOSSO | Rua ARTUR DE SA, 380, UNIAO, Belo Horizonte, MG, Brasil → -19.8807446, -43.9266333
+[173] OK - TEMPEROS E SABORES DA TIA RO | Rua ANTONIO CARLOS GUIMARAES, 35, MINASCAIXA, Belo Horizonte, MG, Brasil → -19.8072972, -43.9607353
+[174] OK - Estabelecimento sem nome | Avenida OTACILIO NEGRAO DE LIMA, 2870, SAO LUIZ, Belo Horizonte, MG, Brasil → -19.8609369, -43.9773711
+[175] OK - BETIM GRILL RESTAURANTE E CHURRASCARIA | Avenida DO CONTORNO, 4747, SERRA, Belo Horizonte, MG, Brasil → -19.9353585, -43.9247453
+[176] OK - KING KONG BURGUER | Rua PINHAL, 371, PIRATININGA, Belo Horizonte, MG, Brasil → -19.8060061, -43.9857596
+[177] OK - THU THU DOCES | Rua ANTONIO DE ALMEIDA JUNIOR, 396, DIAMANTE, Belo Horizonte, MG, Brasil → -19.9980686, -44.0229171
+[178] OK - Estabelecimento sem nome | Avenida OTACILIO NEGRAO DE LIMA, 4288, BANDEIRANTES, Belo Horizonte, MG, Brasil → -19.8538238, -43.9816074
+[179] OK - PROJETO SABOR DELIVERY | Rua MAJOR LOPES, 376, SAO PEDRO, Belo Horizonte, MG, Brasil → -19.9426941, -43.9354543
+[180] OK - FAVORETTO | Rua BAVIERA, 102, CACHOEIRINHA, Belo Horizonte, MG, Brasil → -19.8879847, -43.9489156
+[181] OK - MARIA SOLANGE DA SILVA ALBERTO | Rua MANGABEIRA, 486, SANTO ANTONIO, Belo Horizonte, MG, Brasil → -19.9458676, -43.9465231
+[182] OK - LANCHONETE FARIA NUNES - ESPETINHO&CHOPE | Avenida OLEGARIO MACIEL, 95, CENTRO, Belo Horizonte, MG, Brasil → -19.9209162, -43.9445593
+[183] OK - RENAN OLIVEIRA DE JESUS | Rua MORRO DE SAO PAULO, 150, SANTA CRUZ, Belo Horizonte, MG, Brasil → -19.8782415, -43.9467082
+[184] OK - SUBWAY SAO GERALDO | Avenida ITAITE, 529, SAO GERALDO, Belo Horizonte, MG, Brasil → -19.8977723, -43.8980020
+[185] OK - Estabelecimento sem nome | Avenida SINFRONIO BROCHADO, 1170, BARREIRO, Belo Horizonte, MG, Brasil → -19.9755032, -44.0132999
+[186] OK - SABOR DO RANGO | Rua DOUTOR JOAO MIRANDA, 164, DONA CLARA, Belo Horizonte, MG, Brasil → -19.8612876, -43.9362088
+[187] OK - PURA ALEGRIA CLUB BAR | Rua CASTELO SANTAREM, 430, CASTELO, Belo Horizonte, MG, Brasil → -19.8791619, -44.0014852
+[188] OK - PEPCO | Rua JOSE ISIDORO MIRANDA, 132, MARIA GORETTI, Belo Horizonte, MG, Brasil → -19.8626863, -43.9090650
+[189] OK - Estabelecimento sem nome | Rua TORDO, 103, GOIANIA, Belo Horizonte, MG, Brasil → -19.8704209, -43.8999856
+[190] OK - CANTINA DA NINA | Rua AGUAS VERMELHAS, 88, MINASLANDIA, Belo Horizonte, MG, Brasil → -19.8533026, -43.9280936
+[191] OK - BAIUCA DELIVERY | Rua PIAUI, 1880, SAVASSI, Belo Horizonte, MG, Brasil → -19.9383029, -43.9287133
+[192] OK - ZE DOG | Rua MAESTRO LOBO DE MESQUITA, 132, TUPI B, Belo Horizonte, MG, Brasil → -19.8421882, -43.9151022
+[193] OK - AIOLIBURGER | Rua SAO TEOFILO, 202, PAULO VI, Belo Horizonte, MG, Brasil → -19.8356142, -43.8865091
+[194] OK - VILA MINEIRA | Rua JOAQUIM ARISTOTELES DE OLIVEIRA, 12, LETICIA, Belo Horizonte, MG, Brasil → -19.8076899, -43.9776652
+[195] ERRO - VICTAL DELIVERY | Rua MANOEL PEDRO MIRANDA, 105, MARIA GORETTI, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[196] OK - TOP SALGADOS | Avenida SINFRONIO BROCHADO, 206, BARREIRO, Belo Horizonte, MG, Brasil → -19.9755032, -44.0132999
+[197] OK - RESTAURANTE DU MATTO | Rua MARIA AMELIA PIMENTA, 100, TEIXEIRA DIAS, Belo Horizonte, MG, Brasil → -19.9870059, -44.0206699
+[198] OK - LARI RESTAURANTE E LANCHONETE | Avenida PORTUGAL, 4325, ITAPOA, Belo Horizonte, MG, Brasil → -19.8428176, -43.9613545
+[199] OK - MARILZA JOIAS | Rua SAO GONCALO, 1345, NOVA FLORESTA, Belo Horizonte, MG, Brasil → -19.8913619, -43.9317658
+[200] OK - MESTRE DO SABOR FLORAMAR | Rua DARIO GONCALVES, 354, FLORAMAR, Belo Horizonte, MG, Brasil → -19.8400578, -43.9305645
+[201] OK - ABENCOADO SABOR | Rua SERGIPE, 212, BOA VIAGEM, Belo Horizonte, MG, Brasil → -19.9295609, -43.9359813
+[202] OK - BAR DE LOURDES | Rua SAO PAULO, 2632, LOURDES, Belo Horizonte, MG, Brasil → -19.9310520, -43.9431898
+[203] OK - MAYU | Rua GRAO MOGOL, 99, CARMO, Belo Horizonte, MG, Brasil → -19.9443860, -43.9331149
+[204] OK - RESTAURANTE D'LOURDES | Avenida RAJA GABAGLIA, 1015, LUXEMBURGO, Belo Horizonte, MG, Brasil → -19.9445029, -43.9567154
+[205] ERRO - ESPETINHO E HOT DOG DOS AMIGOS | Rua VEREADOR ANTONIO MENEZES, 81, VILA INDEPENDENCIA I, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[206] OK - SALSA | Rua CONTAGEM, 1889, SANTA INES, Belo Horizonte, MG, Brasil → -19.8916891, -43.9074746
+[207] OK - BROTHER'S HAMBURGUERIA ARTESANAL | Rua NAIR PENTAGNA GUIMARAES, 25, SAO BERNARDO, Belo Horizonte, MG, Brasil → -19.8429290, -43.9398802
+[208] OK - Estabelecimento sem nome | Avenida BARAO HOMEM DE MELO, 4414, ESTORIL, Belo Horizonte, MG, Brasil → -19.9571651, -43.9659182
+[209] OK - FRANGOU FRITS | Rua MACHADO, 36, COLEGIO BATISTA, Belo Horizonte, MG, Brasil → -19.9073082, -43.9336173
+[210] OK - PARADA DU FRANGO ASSADO E MARMITARIA | Rua CARLOS SCHETTINO, 429, NOVA GAMELEIRA, Belo Horizonte, MG, Brasil → -19.9427628, -43.9951982
+[211] OK - RAFA'S GOURMET | Rua CIRANDINHA, 70, FLORAMAR, Belo Horizonte, MG, Brasil → -19.8313850, -43.9388960
+[212] OK - LUZITANA LANCHES | Rua QUINANTE, 266, PARQUE SAO PEDRO, Belo Horizonte, MG, Brasil → -19.8122798, -43.9521307
+[213] OK - Estabelecimento sem nome | Avenida FLEMING, 510, OURO PRETO, Belo Horizonte, MG, Brasil → -19.8728862, -43.9873377
+[214] ERRO - SABORES DA ANNY | Rua ALEIXO LOURENCO DE GOUVEIA, 545, CARDOSO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[215] OK - COREU FOOD DRINK | Avenida DOM JOSE GASPAR, 805, CORACAO EUCARISTICO, Belo Horizonte, MG, Brasil → -19.9220449, -43.9892292
+[216] OK - RESENHA FEIJU | Rua AUGUSTO DOS ANJOS, 504, RIO BRANCO, Belo Horizonte, MG, Brasil → -19.8192239, -43.9801314
+[217] OK - LUD BURGER | Rua DAS PERPETUAS, 1001, LINDEIA, Belo Horizonte, MG, Brasil → -19.9786436, -44.0485452
+[218] OK - Estabelecimento sem nome | Rua CONTAGEM, 1225, SANTA INES, Belo Horizonte, MG, Brasil → -19.8916891, -43.9074746
+[219] OK - THE WAFFLE KING | Rua ANTONIO DE ALBUQUERQUE, 485, SAVASSI, Belo Horizonte, MG, Brasil → -19.9389540, -43.9322878
+[220] OK - SOARES RESTAURANTE & HAPPY HOUR | Rua GRAO PARA, 32, SANTA EFIGENIA, Belo Horizonte, MG, Brasil → -19.9290191, -43.9234383
+[221] OK - HOTDOGZANETTI | Rua PURUS, 380, CONCORDIA, Belo Horizonte, MG, Brasil → -19.8981758, -43.9426108
+[222] ERRO - TREM DO LANCHE | Rua JOSE PEDRO DE BRITO, 225, SANTA RITA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[223] OK - Estabelecimento sem nome | Avenida OTACILIO NEGRAO DE LIMA, 4220, BANDEIRANTES, Belo Horizonte, MG, Brasil → -19.8591396, -43.9945948
+[224] OK - MOINHO DA PEDRA | Rua CAPITAO EDUARDO, 35, MONTE AZUL, Belo Horizonte, MG, Brasil → -19.8163049, -43.8945828
+[225] OK - BAR E RESTAURANTE DA NINA | Rua ANTONIO TEIXEIRA DIAS, 2056, TEIXEIRA DIAS, Belo Horizonte, MG, Brasil → -19.9895769, -44.0140963
+[226] OK - Estabelecimento sem nome | Rua DAS CANARIAS, 254, SANTA BRANCA, Belo Horizonte, MG, Brasil → -19.8405189, -43.9703448
+[227] OK - MARQUES FOOD | Rua MARIA MADALENA ESTEVES, 17, MINASLANDIA, Belo Horizonte, MG, Brasil → -19.8523971, -43.9322089
+[228] ERRO - RAM'MIS DELIVERY | Rua DO PATRIARCA, 1045, IPIRANGA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[229] OK - Estabelecimento sem nome | Rua MARGARIDA ASSIS FONSECA, 7, CALIFORNIA, Belo Horizonte, MG, Brasil → -19.9269243, -44.0077246
+[230] OK - Estabelecimento sem nome | Rua VILA RICA, 768, PADRE EUSTAQUIO, Belo Horizonte, MG, Brasil → -19.9221278, -43.9820720
+[231] OK - DELICIAS DA SOSSO | Rua OSASCO, 80, PIRATININGA, Belo Horizonte, MG, Brasil → -19.8059264, -43.9849667
+[232] OK - LATORTERIA | Rua CUIABA, 302, PRADO, Belo Horizonte, MG, Brasil → -19.9301337, -43.9706638
+[233] OK - PEDEAE | Rua DIMAS LOURENCO LUCINDO, 41, JARDIM FELICIDADE, Belo Horizonte, MG, Brasil → -19.8298231, -43.9237198
+[234] OK - JUVENINHA RESTAURANTE | Rua CASTELO DE LISBOA, 561, CASTELO, Belo Horizonte, MG, Brasil → -19.8785116, -44.0012656
+[235] ERRO - INGRED CAMILLO | Rua CECILIA MAGALHAES GOMES, 555, CONFISCO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[236] OK - Estabelecimento sem nome | Avenida DOM PEDRO I, 3012, PLANALTO, Belo Horizonte, MG, Brasil → -19.8284961, -43.9606331
+[237] OK - DELTON FESTAS | Avenida HENFIL, 560, SANTA TEREZINHA, Belo Horizonte, MG, Brasil → -19.8763133, -44.0084007
+[238] OK - PIPEIROS LANCHES | Rua ADERBAL RODRIGUES VAZ, 116, LINDEIA, Belo Horizonte, MG, Brasil → -19.9746563, -44.0458595
+[239] ERRO - ACAI | Rua JOAO LIRIO DOS SANTOS, 434, SAO JOAO BATISTA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[240] ERRO - LJ MARMITEX | Rua RENASCER, 5, CONJUNTO PAULO VI, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[241] ERRO - CANTINA DA FABI | Rua TEBAS, 954, ALTO VERA CRUZ, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[242] ERRO - SOUZA'S GOURMET | Rua SILVIO GIUSEPE ROSSO, 35, NOVO SANTA CECILIA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[243] ERRO - SOTTILE PIZZERIA | Rua CABO JORGE SOUZA, 113, JARDIM VITORIA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[244] ERRO - RESTAURANTE ENGENZINHO | Rua TATUAPE, 102, MARIA HELENA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[245] ERRO - Estabelecimento sem nome | Rua BERNARDO GUIMARAES, 3126, BARRO PRETO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[246] ERRO - BOUTIQUIN DO DE&DE | Rua MINISTRO OLIVEIRA SALAZAR, 1401, SANTA MONICA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[247] ERRO - LANCHES BURGUER | Avenida PERIMETRAL, 1177, VILA PINHO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[248] ERRO - DELICIAS DA TATA | Rua RIBEIRAO VERMELHO, 77, PIRATININGA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[249] ERRO - FRANGO DO PAIZAO | Rua SETE DE SETEMBRO, 355, CABANA DO PAI TOMAS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[250] ERRO - ELAINE LOPES | Rua CUCO, 22, SAO BENEDITO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[251] ERRO - MARRETA BURGUER | Rua MINISTRO OLIVEIRA SALAZAR, 260, SANTA MONICA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[252] ERRO - CRUZ BURGER | Rua ITAUNENSE, 95, CAMARGOS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[253] ERRO - Estabelecimento sem nome | Avenida DO CONTORNO, 9725, PRADO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[254] ERRO - CRYSTAL NIGHT CLUB | Rua RIO GRANDE DO NORTE, 1470, SAVASSI, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[255] ERRO - AMICI MIEI | Rua TOME DE SOUZA, 1331, SAVASSI, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[256] ERRO - BAR CANTINHO DO GORDO | Rua TEOFILO OTONI, 74, CARLOS PRATES, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[257] ERRO - PEQUIM 2000 | Avenida OLEGARIO MACIEL, 1600, SANTO AGOSTINHO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[258] ERRO - BAR E REST. TONEL DA PINGA | Rua SERGIPE, 129, BOA VIAGEM, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[259] ERRO - Estabelecimento sem nome | Rua DOS TIMBIRAS, 2967, BARRO PRETO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[260] ERRO - LANCHONETE SABOR DE LIMA LTDA | Rua FREI LEOPOLDO, 8, SAO LUIZ, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[261] ERRO - SOUL DE QUEIJO | Rua ANTONIO DE ALBUQUERQUE, 892, SAVASSI, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[262] ERRO - Estabelecimento sem nome | Avenida CRISTIANO MACHADO, 1300, SAGRADA FAMILIA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[263] ERRO - RECANTO VERDE | Avenida PETROLINA, 910, SAGRADA FAMILIA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[264] ERRO - Estabelecimento sem nome | Rua GOIAS, 286, BOA VIAGEM, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[265] ERRO - Estabelecimento sem nome | Rua PIUM I, 1037, ANCHIETA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[266] ERRO - Estabelecimento sem nome | Rua ARACATI, 106, NOVA SUISSA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[267] ERRO - Estabelecimento sem nome | Avenida PRUDENTE DE MORAIS, 743, SANTO ANTONIO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[268] ERRO - SELF SERVICE MADUREIRA | Rua DOS LAGOS, 295, CONJUNTO CELSO MACHADO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[269] ERRO - CANAA | Rua ITAPEMA, 265, ANCHIETA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[270] ERRO - Estabelecimento sem nome | Avenida PROFESSOR MARIO WERNECK, 1441, BURITIS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[271] ERRO - BAR COPO DE OURO | Rua GRAO MOGOL, 573, CARMO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[272] ERRO - CASANTIGA | Rua RIO DE JANEIRO, 1425, LOURDES, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[273] ERRO - Estabelecimento sem nome | Rua CARACA, 402, SERRA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[274] ERRO - BUFFET CRISTINA MISK | Rua MAJOR LOPES, 469, SAO PEDRO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[275] ERRO - Estabelecimento sem nome | Rua ITAMARATI, 977, PADRE EUSTAQUIO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[276] ERRO - M & M LANCHES LTDA | Rua DOS TUPIS, 300, CENTRO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[277] ERRO - Estabelecimento sem nome | Rua SALINAS, 1375, SANTA TEREZA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[278] ERRO - O PONTO RESTAURANTE | Rua GRAO PARA, 520, SANTA EFIGENIA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[279] ERRO - Estabelecimento sem nome | Praça ALEXANDRE MOTERANI, 44, SANTA TEREZINHA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[280] ERRO - O DILICIA | Rua HERMILO ALVES, 94, SANTA TEREZA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[281] ERRO - Estabelecimento sem nome | Avenida ASSIS CHATEAUBRIAND, 524, FLORESTA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[282] ERRO - CASA NOVA | Rua MATO GROSSO, 1100, SANTO AGOSTINHO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[283] ERRO - CERTAS TORTAS | Rua PARAIBA, 1069, SAVASSI, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[284] ERRO - Estabelecimento sem nome | Avenida AFONSO PENA, 2185, FUNCIONARIOS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[285] ERRO - GRILL CHAPA MIL | Avenida GENERAL CARLOS GUEDES, 557, PLANALTO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[286] ERRO - BAIUCA PICANHA E CIA | Rua PIAUI, 1884, SAVASSI, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[287] ERRO - Estabelecimento sem nome | Praça HUGO WERNECK, 227, SANTA EFIGENIA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[288] ERRO - Estabelecimento sem nome | Rua DOS TUPIS, 317, CENTRO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[289] ERRO - RESTAURANTE FANDINHA | Rua FURTADO DE MENEZES, 198, SANTA ROSA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[290] ERRO - RUPA' S CERVEJARIA | Avenida FRANCISCO SA, 1114, GUTIERREZ, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[291] ERRO - CANTINA DO ANGELO | Avenida ABILIO MACHADO, 1044, INCONFIDENCIA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[292] ERRO - Estabelecimento sem nome | Avenida BARBACENA, 1009, SANTO AGOSTINHO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[293] ERRO - O BARCO | Avenida PRESIDENTE CARLOS LUZ, 3001, CAICARAS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[294] ERRO - Estabelecimento sem nome | Avenida ABILIO MACHADO, 1210, INCONFIDENCIA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[295] ERRO - TRIBUNAL DAS DELICIAS | Avenida RAJA GABAGLIA, 1686, GUTIERREZ, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[296] ERRO - Estabelecimento sem nome | Avenida BRASIL, 554, SANTA EFIGENIA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[297] ERRO - CREME DA FELICIDADE | Rua TAVARES, 60, SAO JORGE II, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[298] ERRO - BAR DO ROMULO DELIVERY | Avenida AFONSO VAZ DE MELO, 1305, BARREIRO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[299] ERRO - KINGS LANCHES | Rua JOSE FELIX MARTINS, 811, MANTIQUEIRA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[300] ERRO - 2M BURGUER | Rua APARECIDA, 109, MARIA GORETTI, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[301] ERRO - Estabelecimento sem nome | Rua RIO DE JANEIRO, 1270, LOURDES, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[302] ERRO - PAMELLA CRISTIELLE | Rua JEQUITAI, 140, APARECIDA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[303] ERRO - Estabelecimento sem nome | Avenida DOM JOAO VI, 1710, PALMEIRAS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[304] ERRO - AKAI | Avenida DA SINFONIA, 297, SANTA AMELIA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[305] ERRO - SETT LANCHES | Rua GUARANESIA, 109, COLEGIO BATISTA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[306] ERRO - BUIA&VAL LANCHES | Rua BARAO DE CAMARGOS, 203, JARDIM SAO JOSE, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[307] ERRO - CANTINA DA LICA | Rua SABARA, 26, COLEGIO BATISTA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[308] ERRO - HAMBURGUERIA E MACARRAO NASH BURGUER | Rua MONTE SANTO, 507, CARLOS PRATES, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[309] ERRO - MARISLEIA ALVES DO NASCIMENTO | Rua SETECENTOS E VINTE E TRES, 250, JARDIM VITORIA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[310] ERRO - BAR DO MAICON | Rua JOAQUIM ALVES PEREIRA, 70, JARDIM FELICIDADE, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[311] ERRO - PETRONIO'S DELIVERY | Rua CIBIPURUNA, 120, MONTE AZUL, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[312] ERRO - SANTE BAR E RESTAURANTE | Rua ADAMINA, 20, SANTA TEREZA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[313] ERRO - CLEO LANCHES | Rua TENENTE EDMUNDO MESSEDER, 65, HELIOPOLIS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[314] ERRO - Estabelecimento sem nome | Rua NOSSA SENHORA DE LORETO, 421, OURO MINAS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[315] ERRO - LOURDES COMERCIO DE ALIMENTOS | Rua LAVRAS, 150, SAO PEDRO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[316] ERRO - COCO BAMBU CONCEITO DEL REY | Avenida PRESIDENTE CARLOS LUZ, 3001, CAICARAS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[317] ERRO - RESTAURANTE DA KATIA | Rua VALDIANO MARTINS INACIO, 175, PAQUETA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[318] ERRO - COMIDA DI BUTECO | Rua OLIMPIO DA SILVA LIMA, 57, BOA UNIAO II, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[319] ERRO - CANTINA TOMAZ | Rua AUGUSTA PASSOS MAIA, 95, OURO PRETO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[320] ERRO - THE NOITE | Rua JAYME SALES, 7, MADRE GERTRUDES, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[321] ERRO - MASSAS DA DONA ROSE | Rua EDMON DE SOUSA MELO, 33, VILA TIROL, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[322] ERRO - RESTAURANTE DA VERINHA | Rua SAO PEDRO DA ALDEIA, 3, PILAR, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[323] ERRO - SUSHI HAO | Rua SAO ROMAO, 160, SANTO ANTONIO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[324] ERRO - JESSICA LTDA | Rua LEOPOLDINO DE OLIVEIRA, 1250, NOVA ESPERANCA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[325] ERRO - RESTAURANTE DO PORTUGA | Avenida SEBASTIAO DE BRITO, 441, DONA CLARA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[326] ERRO - HT DOG SCOOBY | Rua IBIRAPUERA, 453, VILA PIRATININGA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[327] ERRO - DBUGUER LANCHES | Rua SERENATA, 61, SANTANA DO CAFEZAL, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[328] ERRO - ACAI BROOKS BURGUER | Avenida PADRE JOSE MAURICIO, 1263, VISTA ALEGRE, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[329] ERRO - DRUMOND'S LANCHES | Rua SANTA BRANCA, 19, PIRATININGA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[330] ERRO - OS BEM AVENTURADOS LANCHES | Rua EPAMINONDAS OTONI, 217, VISTA ALEGRE, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[331] ERRO - B Y ENTREGAS | Rua SETECENTOS E VINTE E QUATRO, 41, JARDIM VITORIA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[332] ERRO - PIZZARIA DONA CLARA | Rua JONAS LINS DE OLIVEIRA, 96, DONA CLARA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[333] ERRO - RANCHO MINEIRO | Avenida LEONTINO FRANCISCO ALVES, 37, SERRA VERDE, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[334] ERRO - AI QUE DOG LANCHES | Rua DOUTOR GERALDO STARLING SOARES, 145, LINDEIA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[335] ERRO - Estabelecimento sem nome | Rua HERMILO ALVES, 142, SANTA TEREZA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[336] ERRO - PRIDE | Rua RIO DE JANEIRO, 1347, LOURDES, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[337] ERRO - Estabelecimento sem nome | Rua TOMPSON FLORES, 73, PRADO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[338] ERRO - MADRUGA FIUZA | Rua PRINCESA ELIZABETH, 371, CAICARAS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[339] ERRO - Estabelecimento sem nome | Travessa AFRICA, 28, CARDOSO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[340] ERRO - BYKALIMENTO | Rua ALTAMIRA, 8, EYMARD, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[341] ERRO - PETIT BURGUER | Rua SANTO INACIO DE LOYOLA, 85, JARDIM FELICIDADE, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[342] ERRO - RESTAURANTE SABOR DE MINAS | Rua VAQUEIRO DO PANTANAL, 81, MARIQUINHAS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[343] ERRO - PIZZA PARADISE LTDA | Rua PITOMBA, 385, MILIONARIOS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[344] ERRO - RESTAURANTE FINO SABOR | Avenida DOUTOR CRISTIANO GUIMARAES, 1060, PLANALTO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[345] ERRO - CHEF DAGAS MARMITEX | Rua COROA DE FRADE, 182, MANGUEIRAS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[346] ERRO - ESQUINA DO CHURRASCO | Rua PLATINA, 999, CALAFATE, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[347] ERRO - GODOY | Rua JOSE RAIMUNDO DE SOUZA, 124, IPE, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[348] ERRO - TELE PIZZA SAO JUDAS TADEU | Rua ITU, 615, RENASCENCA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[349] ERRO - LAR DO SABOR | Rua LUDGERO FELIPE FERREIRA, 105, CONJUNTO TAQUARIL, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[350] ERRO - CARLA E CARLOS | Beco DIRAO, 8, NOSSA SENHORA DA CONCEICAO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[351] ERRO - MAISON BURGUER | Avenida BERNARDO DE VASCONCELOS, 1425, SANTA CRUZ, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[352] ERRO - Estabelecimento sem nome | Rua VIANA DO CASTELO, 25, VILA SANTA ROSA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[353] ERRO - RESTAURANTE DAS DAMA'S | Rua PENIDO, 73, PIRAJA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[354] ERRO - TEMPEROS DU DE | Rua ITAPETINGA, 1942, VILA NOVA CACHOEIRINHA IV, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[355] ERRO - RESTAURANTE ANASTACIA | Avenida CLARA NUNES, 296, RENASCENCA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[356] ERRO - ACAI | Rua AMAZONITA, 409, POMPEIA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[357] ERRO - ACAI NO MEL | Rua ARTUR DE SA, 2370, UNIAO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[358] ERRO - ALECIA | Rua ONZE DE SETEMBRO, 105, LEONINA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[359] ERRO - RESTAURANTE CANTIM | Rua CATALUNHA, 463, SANTA TEREZINHA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[360] ERRO - PIZZA QUALY | Rua JURAMENTO, 108, PARAISO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[361] ERRO - O BURGUES | Rua JACUI, 2913, IPIRANGA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[362] ERRO - Estabelecimento sem nome | Avenida BIAS FORTES, 627, LOURDES, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[363] ERRO - Estabelecimento sem nome | Avenida PRESIDENTE TANCREDO NEVES, 1750, JARDIM ALVORADA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[364] ERRO - Estabelecimento sem nome | Avenida GUARAPARI, 1403, SANTA AMELIA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[365] ERRO - RESTAURANTE SABOR TEM | Rua CALDAS DA RAINHA, 1840, SAO FRANCISCO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[366] ERRO - Estabelecimento sem nome | Rodovia CAMILO TEIXEIRA DA COSTA, 40, NOVO AARAO REIS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[367] ERRO - UAISSABI | Rua FERNANDES TOURINHO, 81, SAVASSI, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[368] ERRO - Estabelecimento sem nome | Rua CARLOS LACERDA, 927, TREVO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[369] ERRO - Estabelecimento sem nome | Rua PADRE PEDRO PINTO, 692, VENDA NOVA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[370] ERRO - Estabelecimento sem nome | Rua CIPRIANO DE CARVALHO, 526, CINQUENTENARIO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[371] ERRO - BAR DO TICO | Avenida DOUTOR CRISTIANO GUIMARAES, 280, PLANALTO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[372] ERRO - REEN BURGUUER BH | Rua PAULO AFONSO, 308, SANTO ANTONIO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[373] ERRO - URUGUAI 857 | Rua DO URUGUAI, 857, SION, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[374] ERRO - PATUSCO PIZZARIA | Avenida AGGEO PIO SOBRINHO, 420, BURITIS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[375] ERRO - DOM TORO GRILL | Avenida PORTUGAL, 2075, SANTA AMELIA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[376] ERRO - Estabelecimento sem nome | Rua TEIXEIRA SOARES, 999, SANTA TEREZA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[377] ERRO - KELLYS BAR | Rua ESPIRITO SANTO, 236, CENTRO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[378] ERRO - Estabelecimento sem nome | Rua DESEMBARGADOR ONOFRE MENDES JUNIOR, 17, RIO BRANCO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[379] ERRO - Estabelecimento sem nome | Avenida NOSSA SENHORA DA SAUDE, 205, MARIA GORETTI, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[380] ERRO - SAMUCA'S BAR | Rua CLOVIS DE CASTRO, 10, FLORAMAR, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[381] ERRO - Estabelecimento sem nome | Rua TOM JOBIM, 366, EYMARD, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[382] ERRO - Estabelecimento sem nome | Rua PECANHA, 100, CARLOS PRATES, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[383] ERRO - Estabelecimento sem nome | Rua JOSE LINS DO REGO, 979, TUPI B, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[384] ERRO - REI DA MASSA | Rua WALDOMIRO LOBO, 133, AARAO REIS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[385] ERRO - Estabelecimento sem nome | Rua PADRE JOAO COMBAT, 111, JONAS VEIGA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[386] ERRO - Estabelecimento sem nome | Rua DOS AEROVIARIOS, 68, AEROPORTO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[387] ERRO - PIZZARIA DBI | Avenida CATULO DA PAIXAO CEARENSE, 136, BAIRRO DAS INDUSTRIAS I, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[388] ERRO - Estabelecimento sem nome | Avenida ELISEU RESENDE, 55, BETANIA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[389] ERRO - Estabelecimento sem nome | Rua OLAVO ANDRADE, 553, CACHOEIRINHA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[390] ERRO - Estabelecimento sem nome | Avenida SIDERAL, 585, VILA MADRE GERTRUDES I, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[391] ERRO - Estabelecimento sem nome | Rua DELFIM, 11, MIRAMAR, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[392] ERRO - Estabelecimento sem nome | Rua DOUTOR BROCHADO, 103, ALTO VERA CRUZ, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[393] ERRO - Estabelecimento sem nome | Rua ITAMAR, 162, ALTO VERA CRUZ, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[394] ERRO - Estabelecimento sem nome | Rua CECILIA MARIA DA SILVA, 147, CONJUNTO JATOBA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[395] ERRO - Estabelecimento sem nome | Rua SAO JUDAS TADEU, 217, RIBEIRO DE ABREU, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[396] ERRO - O BURGUES HAMBURGUERIA | Rua MAJOR LOPES, 47, SAO PEDRO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[397] ERRO - Estabelecimento sem nome | Rua EDITH BARBOSA ROCHA, 120, JARDIM DOS COMERCIARIOS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[398] ERRO - Estabelecimento sem nome | Rua FRANCISCO DUMONT, 751, SANTA TEREZINHA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[399] ERRO - CASALECHI GOURMET | Avenida CONSUL ANTONIO CADAR, 547, SANTA LUCIA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[400] ERRO - ESPETERIA NELORE | Rua ANA LUCIA, 15, AARAO REIS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[401] ERRO - Estabelecimento sem nome | Rua CORONEL RODOLFHO SOARES, 177, CONJUNTO LAGOA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[402] ERRO - GOMESESPETINHOS | Rua ERICO VERISSIMO, 534, CANDELARIA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[403] ERRO - SUPIMPA - COMIDA PARA CELEBRAR | Rua TURFA, 1332, BARROCA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[404] ERRO - Estabelecimento sem nome | Avenida GUARAPARI, 319, SANTA AMELIA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[405] ERRO - Estabelecimento sem nome | Rua GRAO MOGOL, 1245, SION, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[406] ERRO - Estabelecimento sem nome | Rua CAPITAO GUSTAVO MURGEL, 399, CAICARA ADELAIDE, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[407] ERRO - PALLATO | Avenida BRASIL, 1505, SAVASSI, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[408] ERRO - Estabelecimento sem nome | Rua PLATINA, 901, PRADO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[409] ERRO - COMIDA & PROSA | Rua NEPOMUCENO, 361, PRADO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[410] ERRO - Estabelecimento sem nome | Rua GENTIL PORTUGAL DO BRASIL, 646, CAMARGOS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[411] ERRO - TEMPERO DA CRISS | Avenida DOM JOAO VI, 1531, PALMEIRAS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[412] ERRO - RESTAURANTE TREM MINEIRO | Praça CULTURA RACIONAL, 13, SAO JOAO BATISTA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[413] ERRO - CHOPERIA BOM GRILL | Avenida AUGUSTO DE LIMA, 744, CENTRO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[414] ERRO - CASA DOS CONTOS | Rua RIO GRANDE DO NORTE, 1065, SAVASSI, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[415] ERRO - RESTAURANTE VIA 1480 | Avenida PROFESSOR MARIO WERNECK, 1480, BURITIS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[416] ERRO - Estabelecimento sem nome | Rua PITANGUI, 1616, COLEGIO BATISTA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[417] ERRO - Estabelecimento sem nome | Rua LAGO, 136, SAO MARCOS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[418] ERRO - NUTRIBEM | Rua ANTONIO DE ALBUQUERQUE, 98, SAVASSI, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[419] ERRO - Estabelecimento sem nome | Rua VALDIANO MARTINS INACIO, 65, PAQUETA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[420] ERRO - MOBY DICK EVENTOS | Rua ANTONIO DE ALBUQUERQUE, 781, SAVASSI, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[421] ERRO - Estabelecimento sem nome | Avenida DO CONTORNO, 6061, SAO PEDRO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[422] ERRO - Estabelecimento sem nome | Avenida LEONTINO FRANCISCO ALVES, 355, SERRA VERDE, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[423] ERRO - CARLAO REI DO CHURRASCO | Rua CASCAIS, 500, SAO FRANCISCO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[424] ERRO - Estabelecimento sem nome | Rua AMILCAR CABRAL, 280, MILIONARIOS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[425] ERRO - Estabelecimento sem nome | Rua SANTA RITA DURAO, 999, SAVASSI, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[426] ERRO - Estabelecimento sem nome | Rua COMENDADOR NOHME SALOMAO, 91, LAGOINHA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[427] ERRO - Estabelecimento sem nome | Rua DAS SERIEMAS, 344, VILA CLORIS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[428] ERRO - BOLINHA RESTAURANTE E BAR | Avenida JOSE CANDIDO DA SILVEIRA, 3357, IPE, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[429] ERRO - BAR DO CLOVIS | Rua ALAGOAS, 616, SAVASSI, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[430] ERRO - Estabelecimento sem nome | Rua PEDRA SABAO, 343, PIRATININGA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[431] ERRO - GARFO & FACA | Rua SALOMAO CAMARGOS, 118, JARDINOPOLIS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[432] ERRO - EMCASA | Rua ITAPECERICA, 1000, LAGOINHA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[433] ERRO - Estabelecimento sem nome | Rua MAJOR LOPES, 4, SAO PEDRO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[434] ERRO - Estabelecimento sem nome | Avenida NOSSA SENHORA DO CARMO, 1438, SAO PEDRO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[435] ERRO - SPOLETO SHOPPING CIDADE | Rua RIO DE JANEIRO, 910, CENTRO, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[436] ERRO - Estabelecimento sem nome | Rua JOAO NEPOMUCENO DA SILVA, 12, JARDIM DOS COMERCIARIOS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[437] ERRO - SABOR DE MAE | Rua ANTONIO JOSE DE CARVALHO, 25, CAICARAS, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[438] ERRO - Estabelecimento sem nome | Rua FERNANDO JARDIM, 150, SAO JOAO BATISTA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
+[439] ERRO - CASA DE PALHA | Rua JACUI, 2945, IPIRANGA, Belo Horizonte, MG, Brasil → Coordenadas não encontradas
