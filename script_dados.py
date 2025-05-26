@@ -23,15 +23,12 @@ def obter_coordenadas(endereco):
     return None
 
 
-# Carrega os dados
 df_final = pd.read_csv("data/dados_filtrados.csv")
 df_final["COORD_GEO"] = ""
 
-# Logs
 log_file = open("logs/log_geolocalizacao.txt", "w", encoding="utf-8")
 falhas_file = open("logs/enderecos_nao_encontrados.txt", "w", encoding="utf-8")
 
-# Processa todos os endereços
 for i, row in df_final.iterrows():
     endereco = row["ENDERECO_COMPLETO"]
     nome = row["NOME_FANTASIA"]
@@ -52,7 +49,6 @@ for i, row in df_final.iterrows():
     # print(f"{i+1}/{len(df_final)} - Processado")
     sleep(1)
 
-# Salva os dados
 df_final.to_csv("data/dados_com_coordenadas.csv", index=False, encoding="utf-8")
 
 log_file.close()
