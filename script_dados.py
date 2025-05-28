@@ -1,10 +1,20 @@
-# dado que ja temos os dados pré-processados e só precisamos pegar os endereços
-
 import pandas as pd
 from time import sleep
-from datetime import datetime
 import requests
+from tqdm import tqdm
 
+# Carregando dados
+df_final = pd.read_csv("comida_di_buteco/dados_com_cdb.csv")
+df_final["COORDS"] = ""
+
+# Arquivos de log
+log_file = open("logs/log_geolocalizacao.txt", "w", encoding="utf-8")
+falhas_file = open("logs/enderecos_nao_encontrados.txt", "w", encoding="utf-8")
+
+def log(mensagem):
+    """Escreve a mensagem no log de terminal e no log_file."""
+    print(mensagem, flush=True)
+    log_file.write(mensagem + "\n")
 
 def obter_coordenadas(endereco):
     url = "https://nominatim.openstreetmap.org/search"
@@ -19,38 +29,44 @@ def obter_coordenadas(endereco):
         if data:
             return f"{data[0]['lat']}, {data[0]['lon']}"
     except Exception as e:
-        print(f"Erro ao geocodificar: {endereco} - {e}")
+        log(f"⚠️ Erro ao geocodificar: {endereco} - {e}")
     return None
 
-
-df_final = pd.read_csv("data/dados_filtrados.csv")
-df_final["COORD_GEO"] = ""
-
-log_file = open("logs/log_geolocalizacao.txt", "w", encoding="utf-8")
-falhas_file = open("logs/enderecos_nao_encontrados.txt", "w", encoding="utf-8")
+# Progresso
+total = len(df_final)
+percent_step = 5
+next_percent = percent_step
 
 for i, row in df_final.iterrows():
     endereco = row["ENDERECO_COMPLETO"]
-    nome = row["NOME_FANTASIA"]
+
+    nome_fantasia = row.get("NOME_FANTASIA", "").strip()
+    nome_real = row.get("NOME", "").strip()
+    nome = nome_real if nome_fantasia.upper() == "ESTABELECIMENTO SEM NOME" else nome_fantasia
 
     if pd.notna(endereco) and endereco.strip() != "":
         coord = obter_coordenadas(endereco)
-        df_final.at[i, "COORD_GEO"] = coord
+        df_final.at[i, "COORDS"] = coord
 
         if coord:
-            log_file.write(f"[{i}] OK - {nome} | {endereco} → {coord}\n")
+            log(f"[{i}] OK - {nome} | {endereco} → {coord}")
         else:
-            log_file.write(f"[{i}] ERRO - {nome} | {endereco} → Coordenadas não encontradas\n")
+            log(f"[{i}] ERRO - {nome} / {nome_fantasia} | {endereco} → Coordenadas não encontradas")
             falhas_file.write(f"{nome} | {endereco}\n")
     else:
-        log_file.write(f"[{i}] ERRO - Endereço vazio para {nome}\n")
+        log(f"[{i}] ERRO - Endereço vazio para {nome}")
         falhas_file.write(f"{nome} | Endereço vazio\n")
 
-    # print(f"{i+1}/{len(df_final)} - Processado")
+    progresso_percentual = int((i + 1) / total * 100)
+    if progresso_percentual >= next_percent:
+        log(f"📍 Progresso: {progresso_percentual}% concluído.")
+        next_percent += percent_step
+
     sleep(1)
 
+# Salvando resultado
 df_final.to_csv("data/dados_com_coordenadas.csv", index=False, encoding="utf-8")
 
 log_file.close()
 falhas_file.close()
-print("Processo finalizado.")
+log("✅ Processo finalizado.")
