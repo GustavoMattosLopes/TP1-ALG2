@@ -1,7 +1,16 @@
 import pandas as pd
 from time import sleep
 import requests
+import re
 from tqdm import tqdm
+
+def limpar_nome_fantasia(valor):
+    if not isinstance(valor, str):
+        valor = str(valor)
+    valor = valor.strip()
+
+    valor = re.sub(r"^\d[\d\.\-\/]*\s*", "", valor)
+    return valor
 
 # Carregando dados
 df_final = pd.read_csv("comida_di_buteco/dados_com_cdb.csv")
@@ -40,8 +49,13 @@ next_percent = percent_step
 for i, row in df_final.iterrows():
     endereco = row["ENDERECO_COMPLETO"]
 
-    nome_fantasia = row.get("NOME_FANTASIA", "").strip()
-    nome_real = row.get("NOME", "").strip()
+    nome_fantasia_raw = row.get("NOME_FANTASIA", "")
+    nome_fantasia = limpar_nome_fantasia(nome_fantasia_raw)
+    nome_fantasia = str(nome_fantasia).strip()
+
+    # Garantir string para nome real também
+    nome_real = str(row.get("NOME", "")).strip()
+
     nome = nome_real if nome_fantasia.upper() == "ESTABELECIMENTO SEM NOME" else nome_fantasia
 
     if pd.notna(endereco) and endereco.strip() != "":
