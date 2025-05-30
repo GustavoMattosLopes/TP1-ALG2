@@ -2,26 +2,104 @@ import pandas as pd
 import dash_leaflet as dl
 from dash import Dash, html
 
-df = pd.read_csv("dataset.csv")
+df = pd.read_csv("data/complete_bar_data.csv")
+df = df[:1000]
 
-df = df.dropna(subset=["LAT", "LON"]).head()
+cdb = pd.read_csv("data/complete_cdb_data.csv")
+
+df[["LAT", "LON"]] = df["COORD_GEO"].str.strip("()").str.split(",", expand=True)
+
+df["LAT"] = df["LAT"].str.strip().astype(float)
+df["LON"] = df["LON"].str.strip().astype(float)
+
+df = df.dropna(subset=["LAT", "LON"])
 
 center = [df["LAT"].mean(), df["LON"].mean()]
 
+marker_red = {
+    "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png",
+    "shadowUrl": "https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png",
+    "iconSize": [25, 41],
+    "iconAnchor": [12, 41],
+    "popupAnchor": [1, -34],
+    "shadowSize": [41, 41]
+}
+
+marker_blue = {
+    "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+    "shadowUrl": "https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png",
+    "iconSize": [25, 41],
+    "iconAnchor": [12, 41],
+    "popupAnchor": [1, -34],
+    "shadowSize": [41, 41]
+}
+
+
 markers = []
 for _, row in df.iterrows():
-    markers.append(
-        dl.Marker(
-            position=[row["LAT"], row["LON"]],
-            children=[
-                dl.Popup([
-                    html.B(f"ID: {row['ID_ATIV_ECON_ESTABELECIMENTO']}"),
-                    html.Br(),
-                    html.Span(f"{row['NOME_FANTASIA'] or row['NOME']}"),
-                ])
-            ],
+    name = row['NOME_FANTASIA'] if pd.notna(row['NOME_FANTASIA']) else row['NOME']
+    address = row["ENDERECO_COMPLETO"]
+    if int(row["ID_CDB"]) == 0:
+        markers.append(
+            dl.Marker(
+                position=[row["LAT"], row["LON"]],
+                icon=marker_blue,
+                children=[
+                    dl.Popup([
+                        html.Br(),
+                        html.Span(name),
+                        html.Br(),
+                        html.Span(address),
+                        html.Br()
+                    ])
+                ],
+            )
         )
-    )
+    else:
+        cdb_row = cdb.iloc[row["ID_CDB"]]
+        markers.append(
+            dl.Marker(
+                position=[row["LAT"], row["LON"]],
+                icon=marker_red,
+                children=[
+                    dl.Popup([
+                        html.Div([
+                            html.B(name, style={"font-size": "16px"}),
+                            html.Br(),
+                            html.Span(address, style={"display": "block", "margin": "5px 0"}),
+                            html.Br(),
+                            html.B("Petisco Comida di Buteco:", style={"color": "#d35400"}),
+                            html.Span(f"{cdb_row['PETISCO']}", style={"display": "block", "margin-bottom": "5px"}),
+                            html.I(cdb_row["DESCRICAO"], style={"display": "block", "font-size": "13px", "margin-bottom": "5px"}),
+                            html.A(
+                                html.Img(
+                                    src=cdb_row["IMAGEM"],
+                                    style={
+                                        "width": "180px",
+                                        "height": "auto",
+                                        "border": "2px solid #555",
+                                        "border-radius": "8px",
+                                        "margin-top": "8px",
+                                        "box-shadow": "2px 2px 5px rgba(0,0,0,0.3)"
+                                    }
+                                ),
+                                href=cdb_row["IMAGEM"],
+                                target="_blank",
+                            )
+                        ],
+                        style={
+                            "text-align": "center",
+                            "padding": "10px",
+                            "border": "2px solid #ccc",
+                            "border-radius": "10px",
+                            "background-color": "white",
+                            "box-shadow": "2px 2px 8px rgba(0,0,0,0.2)"
+                        })
+                    ])
+
+                ],
+            )
+        )
 
 app = Dash(__name__)
 app.layout = dl.Map(
