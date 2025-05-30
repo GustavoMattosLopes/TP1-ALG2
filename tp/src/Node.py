@@ -1,5 +1,5 @@
-from Establishment import Establishment
-from Rectangle import Rectangle
+from src.Establishment import Establishment
+from src.Rectangle import Rectangle
 
 class Node:
     def __init__(self, points, x):
@@ -15,12 +15,20 @@ class Node:
 
 
     def compute_median(self, points:list[Establishment], x):
+        if(len(points)==0):
+            print("AAAAAAAAAAAAAAAAAAAAAAAAAAA")
         if x:
             points.sort(key= lambda establishment: establishment.x)
-            return points[len(points)//2].x - (1 if len(points)%2 == 0 else 0)
+            return points[len(points)//2-(1 if len(points)%2 == 0 else 0)].x
         else:
             points.sort(key= lambda establishment: establishment.y)
-            return points[len(points)//2].y - (1 if len(points)%2 == 0 else 0)
+            return points[len(points)//2-(1 if len(points)%2 == 0 else 0)].y
+    
+    def all_equals(self):
+        for i in range(len(self.points)-1):
+            if(self.points[i].x != self.points[i+1].x or self.points[i].y !=self.points[i+1].y):
+                return False
+        return True
     
     @property
     def points(self):
