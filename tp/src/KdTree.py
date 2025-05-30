@@ -16,7 +16,6 @@ class KdTree:
         left = []
         right = []
 
-
         get_coord = lambda p: p.x if x else p.y
         for point in points:
             if(get_coord(point) <= median):
