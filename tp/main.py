@@ -37,7 +37,7 @@ marker_blue = {
 
 markers = []
 for _, row in df.iterrows():
-    name = row['NOME_FANTASIA'] if pd.notna(row['NOME_FANTASIA']) else row['NOME']
+    name = row['NOME_FANTASIA'] if row['NOME_FANTASIA'] == "ESTABELECIMENTO SEM NOME" else row['NOME']
     address = row["ENDERECO_COMPLETO"]
     if int(row["ID_CDB"]) == 0:
         markers.append(
@@ -45,13 +45,22 @@ for _, row in df.iterrows():
                 position=[row["LAT"], row["LON"]],
                 icon=marker_blue,
                 children=[
-                    dl.Popup([
-                        html.Br(),
-                        html.Span(name),
-                        html.Br(),
-                        html.Span(address),
-                        html.Br()
-                    ])
+                    dl.Popup(
+                        html.Div([
+                            html.H4(name, style={"margin": "5px 0", "textAlign": "center"}),
+                            html.Hr(),
+                            html.P(address, style={"margin": "5px 0", "textAlign": "center"}),
+                        ],
+                        style={
+                            "border": "2px solid #007BFF",
+                            "borderRadius": "10px",
+                            "padding": "10px",
+                            "backgroundColor": "white",
+                            "boxShadow": "2px 2px 6px rgba(0,0,0,0.3)",
+                            "textAlign": "center",
+                            "width": "200px"
+                        })
+                    )
                 ],
             )
         )
@@ -64,12 +73,12 @@ for _, row in df.iterrows():
                 children=[
                     dl.Popup([
                         html.Div([
-                            html.B(name, style={"font-size": "16px"}),
-                            html.Br(),
-                            html.Span(address, style={"display": "block", "margin": "5px 0"}),
+                            html.H4(name, style={"margin": "5px 0", "textAlign": "center"}),
+                            html.Hr(),
+                            html.P(address, style={"margin": "5px 0", "textAlign": "center"}),
                             html.Br(),
                             html.B("Petisco Comida di Buteco:", style={"color": "#d35400"}),
-                            html.Span(f"{cdb_row['PETISCO']}", style={"display": "block", "margin-bottom": "5px"}),
+                            html.B(f"{cdb_row['PETISCO']}", style={"display": "block", "margin-bottom": "5px"}),
                             html.I(cdb_row["DESCRICAO"], style={"display": "block", "font-size": "13px", "margin-bottom": "5px"}),
                             html.A(
                                 html.Img(
