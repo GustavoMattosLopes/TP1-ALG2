@@ -47,21 +47,6 @@ establishments_list = [
 ]
 
 
-
-def bounds_overlap(bounds1, bounds2, tol=0.05):
-    """Retorna True se bounds1 e bounds2 se sobrepõem com alguma tolerância"""
-    if not bounds1 or not bounds2:
-        return False
-
-    (lat_s1, lon_w1), (lat_n1, lon_e1) = bounds1
-    (lat_s2, lon_w2), (lat_n2, lon_e2) = bounds2
-
-    lat_overlap = (lat_s1 - tol) <= lat_n2 and (lat_n1 + tol) >= lat_s2
-    lon_overlap = (lon_w1 - tol) <= lon_e2 and (lon_e1 + tol) >= lon_w2
-    return lat_overlap and lon_overlap
-
-
-
 df = pd.read_csv("../data/complete_bar_data.csv")
 
 with open("../data/BAIRRO_OFICIAL_bh.geojson", encoding='utf-8') as f:
