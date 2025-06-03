@@ -3,3 +3,4 @@ data/dados_filtrados.csv
 comida_di_buteco/dados_filtrados.csv
 __pycache__/
 *.py[cod]
+*.log

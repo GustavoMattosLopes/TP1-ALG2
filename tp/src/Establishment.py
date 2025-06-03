@@ -1,3 +1,5 @@
+import pandas as pd
+
 class Establishment:
     def __init__(self, id, x, y, data_source):
         self.id = id
@@ -10,7 +12,11 @@ class Establishment:
     def load_data(self):
         if not self._loaded:
             if self.id in self._data_source.index:
-                self.data = self._data_source.loc[self.id].to_dict()
+                rows = self._data_source.loc[self.id]
+                if isinstance(rows, pd.DataFrame):
+                    self.data = rows.iloc[0].to_dict()
+                else:
+                    self.data = rows.to_dict()
                 self._loaded = True
 
     def get_info(self):
