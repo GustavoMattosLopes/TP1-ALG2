@@ -120,17 +120,21 @@ for idx, row in df.iterrows():
                 "address": row.get("ENDERECO_COMPLETO", "Desconhecido")
             })
         else:
-            cdb_row = cdb.iloc[row["ID_CDB"]]
-            locs.append({
-                "id": idx,
-                "position": coord,
-                "name": row.get("NOME_FANTASIA", "Desconhecido"),
-                "icon": marker_red,
-                "address": row.get("ENDERECO_COMPLETO", "Desconhecido"),
-                "petisco": cdb_row.get("PETISCO", "Desconhecido"),
-                "descricao": cdb_row.get("DESCRICAO", "Desconhecido"),
-                "imagem": cdb_row.get("IMAGEM", "Desconhecido")
-            })
+            try:
+                cdb_row = cdb.iloc[row["ID_CDB"]-1]
+                locs.append({
+                    "id": idx,
+                    "position": coord,
+                    "name": row.get("NOME_FANTASIA", "Desconhecido"),
+                    "icon": marker_red,
+                    "address": row.get("ENDERECO_COMPLETO", "Desconhecido"),
+                    "petisco": cdb_row.get("PETISCO", "Desconhecido"),
+                    "descricao": cdb_row.get("DESCRICAO", "Desconhecido"),
+                    "imagem": cdb_row.get("IMAGEM", "Desconhecido")
+                })
+            except IndexError:
+                print(f"[ERRO] ID_CDB fora do range do iloc: {row['ID_CDB']}")
+                print(f"Total de linhas no DataFrame cdb: {len(cdb)}")
 
 
 # =================================
