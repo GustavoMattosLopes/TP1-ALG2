@@ -3,11 +3,12 @@ import json
 import random
 import pandas as pd
 from collections import defaultdict
+from src.KdTree import KdTree
 
 import dash
 from dash import dcc, html, Input, Output, State
 import dash_leaflet as dl
-
+from src.Rectangle import Rectangle
 # =======================
 # === Dados e leituras ===
 # =======================
@@ -66,6 +67,7 @@ marker_blue = {
     "shadowSize": [41, 41]
 }
 
+
 # Pontos fixos para teste do retângulo
 establishments_list = [
     Establishment(id=1023, x=-19.92, y=-43.94, data_source=df),
@@ -73,6 +75,7 @@ establishments_list = [
     Establishment(id=60651, x=-19.9243, y=-43.9445, data_source=df)
 ]
 
+establishments = []
 
 # ========================
 # === Utilitários ===
@@ -108,10 +111,13 @@ def format_address(addr):
 # =========================
 
 locs = []
+maior = -100000
+menor = 1000000
 for idx, row in df.iterrows():
     coord = extrair_coordenadas(row.get("COORD_GEO")) or extrair_coordenadas(row.get("COORDS"))
     if coord:
         if int(row["ID_CDB"]) == 0:
+            establishments.append(Establishment(idx, coord[0] , coord[1] , df))
             locs.append({
                 "id": idx,
                 "position": coord,
@@ -132,10 +138,14 @@ for idx, row in df.iterrows():
                     "descricao": cdb_row.get("DESCRICAO", "Desconhecido"),
                     "imagem": cdb_row.get("IMAGEM", "Desconhecido")
                 })
+                establishments.append(Establishment(idx, coord[0] , coord[1] , df))
             except IndexError:
                 print(f"[ERRO] ID_CDB fora do range do iloc: {row['ID_CDB']}")
                 print(f"Total de linhas no DataFrame cdb: {len(cdb)}")
 
+
+# Criando a Kd-tree
+kdtree = KdTree(establishments)
 
 # =================================
 # === Geração de componentes HTML ===
@@ -187,7 +197,21 @@ app.layout = html.Div([
         children=[
             dl.TileLayer(),
             dl.GeoJSON(data=geojson_data, options=dict(style=dict(color="#555", weight=1, opacity=0.4, fill=False))),
-            dl.LayerGroup(id="markers")
+            dl.LayerGroup(id="markers"),
+            dl.FeatureGroup([
+            dl.EditControl(
+                id="edit_control",
+                draw={
+                    'rectangle': True,
+                    'polygon': False,
+                    'circle': False,
+                    'marker': False,
+                    'polyline': False,
+                    'circlemarker': False
+                },
+                edit={'edit': True, 'remove': True}
+            )
+        ])
         ],
         style={'width': '100%', 'height': '80vh'}
     ),
@@ -199,13 +223,39 @@ app.layout = html.Div([
 # ====================
 # === Callbacks Dash ===
 # ====================
+@app.callback(
+    Output("output", "children"),
+    Input("edit_control", "geojson")
+)
 
 @app.callback(
     Output("list-all-info", "children"),
-    Input("map", "zoom")
+    Input("map", "zoom"),
+    Input("edit_control", "geojson"),
+    State("list-all-info", "children")
 )
-def update_establishments_info(zoom):
-    return generate_establishments_info(establishments_list)
+
+def update_establishments_info(zoom, feature_collection, actual):
+    if feature_collection is None or not feature_collection.get("features"):
+        return actual
+    rectangles = []
+    for feature in feature_collection["features"]:
+        geometry = feature.get("geometry", {})
+        if geometry.get("type") == "Polygon":
+            coordinates = geometry.get("coordinates", [])
+            if coordinates:
+                rectangles.append(coordinates[0])
+    if(len(rectangles) > 1):
+        return actual
+    
+    xmax = max(rectangles[0], key=lambda x: x[1])[1]
+    xmin = min(rectangles[0], key=lambda x: x[1])[1]
+    ymax = max(rectangles[0], key=lambda x: x[0])[0]
+    ymin = min(rectangles[0], key=lambda x: x[0])[0]
+    establishments_query = kdtree.query(Rectangle(xmin, xmax, ymin, ymax))
+
+
+    return generate_establishments_info(establishments_query)
 
 @app.callback(
     Output("markers", "children"),
