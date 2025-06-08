@@ -2,7 +2,7 @@
 
 Este projeto implementa um sistema interativo para visualização e filtragem de bares e restaurantes registrados na base de dados da Prefeitura de Belo Horizonte (PBH). O sistema utiliza um mapa interativo que permite selecionar áreas retangulares para consulta ortogonal, retornando os estabelecimentos dentro dessa região.
 
-![Imagem do Programa](imagens/interface-principal.png)
+![Imagem do Programa](imagens/img-app.jpeg)
 
 🔗 Acesse o sistema aqui: [tp1-alg2-uq38.onrender.com](https://tp1-alg2-uq38.onrender.com/)
 
@@ -45,13 +45,19 @@ O sistema desenvolvido tem como objetivo permitir aos usuários:
 
   ![Zoom no mapa](imagens/zoom.png)
 
+- ✅ Pop-ups com os dados dos bares do **Comida di Buteco** com marcadores **vermelhos**:
+
+  ![Zoom no mapa](imagens/img-cbd-example.jpeg)
+
 - ✅ Ferramenta de **seleção retangular** sobre o mapa para realizar consultas espaciais:
 
-  ![Seleção retangular](imagens/retangulo.png)
+  ![Seleção retangular](imagens/img-where-draw.jpeg)
+
+  ![Seleção retangular](imagens/img-rectangle-example.jpeg)
 
 - ✅ Tabela interativa com os resultados dos estabelecimentos **dentro da área selecionada**:
 
-  ![Tabela de resultados](imagens/tabela.png)
+  ![Tabela de resultados](imagens/img-where-selected.jpeg)
 
 - ✅ Botão de **limpar seleção** para redefinir a área e restaurar a exibição total:
 
