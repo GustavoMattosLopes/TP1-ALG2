@@ -51,17 +51,15 @@ O sistema desenvolvido tem como objetivo permitir aos usuários:
 
 - ✅ Ferramenta de **seleção retangular** sobre o mapa para realizar consultas espaciais:
 
-  ![Seleção retangular](images/img-where-draw.jpeg)
-
   ![Seleção retangular](images/img-rectangle-example.jpeg)
 
 - ✅ Tabela interativa com os resultados dos estabelecimentos **dentro da área selecionada**:
 
   ![Tabela de resultados](images/img-where-selected.jpeg)
 
-- ✅ Botão de **limpar seleção** para redefinir a área e restaurar a exibição total:
+- ✅ Botão de **desenhar retângulo** e de **limpar seleção** para redefinir a área e restaurar a exibição total:
 
-  ![Botão limpar](images/limpar.png)
+  ![Botão limpar](images/img-where-draw.png)
 
 ---
 
