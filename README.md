@@ -55,7 +55,7 @@ O sistema desenvolvido tem como objetivo permitir aos usuários:
 
 - ✅ Tabela interativa com os resultados dos estabelecimentos **dentro da área selecionada**:
 
-  ![Tabela de resultados](images/img-where-selected.jpeg)
+  ![Tabela de resultados](images/img-where-selected.png)
 
 - ✅ Botão de **desenhar retângulo** e de **limpar seleção** para redefinir a área e restaurar a exibição total:
 
