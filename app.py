@@ -392,7 +392,7 @@ def update_markers(zoom, bounds, has_rectangle, store_data, cache_data, rectangl
                 html.P(visible_dict[loc_id]["address"], style={"margin": "5px 0", "textAlign": "center"}),
                 html.Br(),
                 html.B("Petisco Comida di Buteco:", style={"color": "#d35400"}),
-                html.B(f"{visible_dict[loc_id]["petisco"]}", style={"display": "block", "margin-bottom": "5px"}),
+                html.B(f"{visible_dict[loc_id]['petisco']}", style={"display": "block", "margin-bottom": "5px"}),
                 html.I(visible_dict[loc_id]["descricao"], style={"display": "block", "font-size": "13px", "margin-bottom": "5px"}),
                 html.A(
                     html.Img(
