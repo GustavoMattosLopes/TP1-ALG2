@@ -74,7 +74,7 @@ def format_address(addr):
         addr = addr.replace(prep, prep.lower())
     return re.sub(r'\bMg\b', "MG", addr)
 
-def establishment_to_dict(est: Establishment, df, cdb, marker_gray, marker_red):
+def establishment_to_dict(est: Establishment, df, cdb, marker_blue, marker_red):
     row = df.loc[est.id]
     if isinstance(row, pd.DataFrame):
         row = row.iloc[0] 
@@ -82,7 +82,7 @@ def establishment_to_dict(est: Establishment, df, cdb, marker_gray, marker_red):
         "id": est.id,
         "position": (est.x, est.y),
         "name": row.get("NOME_FANTASIA", "Desconhecido"),
-        "icon": marker_gray,
+        "icon": marker_blue,
         "address": row.get("ENDERECO_COMPLETO", "Desconhecido"),
     }
 
@@ -117,7 +117,7 @@ for idx, row in df.iterrows():
                 "id": idx,
                 "position": coord,
                 "name": row.get("NOME_FANTASIA", "Desconhecido"),
-                "icon": marker_gray,
+                "icon": marker_blue,
                 "address": row.get("ENDERECO_COMPLETO", "Desconhecido")
             })
         else:
@@ -200,6 +200,7 @@ def generate_establishments_info(establishment_list):
 # =====================
 
 app = dash.Dash(__name__, suppress_callback_exceptions=True)
+server = app.server
 
 app.layout = html.Div([
     dcc.Store(id="store-random-ids", data={"zoom": 0, "ids": []}),
@@ -289,7 +290,7 @@ def update_establishments_info(zoom, feature_collection, actual):
     establishments_query = kdtree.query(Rectangle(xmin, xmax, ymin, ymax))
     rectangle_list_g = establishments_query.copy()
     rectangle_list_g = [
-        establishment_to_dict(est, df, cdb, marker_gray, marker_red)
+        establishment_to_dict(est, df, cdb, marker_blue, marker_red)
         for est in establishments_query
     ]
     ids_in_rectangle = [e.id for e in establishments_query]
@@ -391,7 +392,7 @@ def update_markers(zoom, bounds, has_rectangle, store_data, cache_data, rectangl
                 html.P(visible_dict[loc_id]["address"], style={"margin": "5px 0", "textAlign": "center"}),
                 html.Br(),
                 html.B("Petisco Comida di Buteco:", style={"color": "#d35400"}),
-                html.B(f"{visible_dict[loc_id]["petisco"]}", style={"display": "block", "margin-bottom": "5px"}),
+                html.B(f"{visible_dict[loc_id]['petisco']}", style={"display": "block", "margin-bottom": "5px"}),
                 html.I(visible_dict[loc_id]["descricao"], style={"display": "block", "font-size": "13px", "margin-bottom": "5px"}),
                 html.A(
                     html.Img(
@@ -434,4 +435,4 @@ def update_markers(zoom, bounds, has_rectangle, store_data, cache_data, rectangl
     return markers, {"zoom": zoom, "ids": final_ids}, cache_data, past_rectangle_list
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run_server(debug=False)
