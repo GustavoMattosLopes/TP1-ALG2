@@ -33,7 +33,7 @@ marker_red = {
     "shadowSize": [41, 41]
 }
 
-marker_blue = {
+marker_gray = {
     "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
     "shadowUrl": "https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png",
     "iconSize": [25, 41],
