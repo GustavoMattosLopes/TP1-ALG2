@@ -9,6 +9,7 @@ import dash
 from dash import dcc, html, Input, Output, State
 import dash_leaflet as dl
 from src.Rectangle import Rectangle
+from src.Establishment import Establishment
 # =======================
 # === Dados e leituras ===
 # =======================
@@ -18,32 +19,6 @@ cdb = pd.read_csv("data/complete_cdb_data.csv")
 
 with open("data/BAIRRO_OFICIAL_bh_reprojetado.geojson", encoding="utf-8") as f:
     geojson_data = json.load(f)
-
-# ========================
-# === Classe principal ===
-# ========================
-
-class Establishment:
-    def __init__(self, id, x, y, data_source):
-        self.id = id
-        self.x = x
-        self.y = y
-        self._data_source = data_source
-        self._loaded = False
-        self.data = None
-
-    def load_data(self):
-        if not self._loaded and self.id in self._data_source.index:
-            rows = self._data_source.loc[self.id]
-            self.data = rows.iloc[0].to_dict() if isinstance(rows, pd.DataFrame) else rows.to_dict()
-            self._loaded = True
-
-    def get_info(self):
-        self.load_data()
-        return self.data
-
-    def __str__(self):
-        return f'Establishment {self.id} @ ({self.x}, {self.y})'
     
 # ==========================
 # === Variáveis Globais ===
@@ -66,6 +41,9 @@ marker_blue = {
     "popupAnchor": [1, -34],
     "shadowSize": [41, 41]
 }
+
+exist_rectangles = False
+rectangle_list = []
 
 
 # Pontos fixos para teste do retângulo
@@ -209,35 +187,44 @@ app.layout = html.Div([
                     'polyline': False,
                     'circlemarker': False
                 },
-                edit={'edit': True, 'remove': True}
+                edit={'edit': True, 'remove': True},
+                
             )
         ])
+
         ],
-        style={'width': '100%', 'height': '80vh'}
+        
+        style={'width': '100%', 'height': '80vh'},
+            
     ),
 
     html.H2("Estabelecimentos na Área Selecionada", style={'marginTop': '30px'}),
-    html.Div(id="list-all-info", style={'marginTop': '10px'})
+    html.Div(id="list-all-info", style={'marginTop': '10px'}),
+    html.Div(id="rectangle_data", style={"display": "none"})
+
 ])
 
 # ====================
 # === Callbacks Dash ===
 # ====================
-@app.callback(
-    Output("output", "children"),
-    Input("edit_control", "geojson")
-)
+
+
 
 @app.callback(
     Output("list-all-info", "children"),
     Input("map", "zoom"),
     Input("edit_control", "geojson"),
-    State("list-all-info", "children")
+    State("list-all-info", "children"),
+    prevent_initial_call=True
 )
 
 def update_establishments_info(zoom, feature_collection, actual):
+    global rectangle_list
+    global exist_rectangles
     if feature_collection is None or not feature_collection.get("features"):
+        exist_rectangles = False
         return actual
+    
     rectangles = []
     for feature in feature_collection["features"]:
         geometry = feature.get("geometry", {})
@@ -245,6 +232,7 @@ def update_establishments_info(zoom, feature_collection, actual):
             coordinates = geometry.get("coordinates", [])
             if coordinates:
                 rectangles.append(coordinates[0])
+
     if(len(rectangles) > 1):
         return actual
     
@@ -252,8 +240,10 @@ def update_establishments_info(zoom, feature_collection, actual):
     xmin = min(rectangles[0], key=lambda x: x[1])[1]
     ymax = max(rectangles[0], key=lambda x: x[0])[0]
     ymin = min(rectangles[0], key=lambda x: x[0])[0]
-    establishments_query = kdtree.query(Rectangle(xmin, xmax, ymin, ymax))
 
+    establishments_query = kdtree.query(Rectangle(xmin, xmax, ymin, ymax))
+    rectangle_list = establishments_query.copy()
+    exist_rectangles = True
 
     return generate_establishments_info(establishments_query)
 

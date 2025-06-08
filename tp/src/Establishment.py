@@ -10,14 +10,10 @@ class Establishment:
         self.data = None
 
     def load_data(self):
-        if not self._loaded:
-            if self.id in self._data_source.index:
-                rows = self._data_source.loc[self.id]
-                if isinstance(rows, pd.DataFrame):
-                    self.data = rows.iloc[0].to_dict()
-                else:
-                    self.data = rows.to_dict()
-                self._loaded = True
+        if not self._loaded and self.id in self._data_source.index:
+            rows = self._data_source.loc[self.id]
+            self.data = rows.iloc[0].to_dict() if isinstance(rows, pd.DataFrame) else rows.to_dict()
+            self._loaded = True
 
     def get_info(self):
         self.load_data()
