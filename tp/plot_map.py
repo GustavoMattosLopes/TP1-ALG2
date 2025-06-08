@@ -375,160 +375,87 @@ def update_markers(zoom, bounds, has_rectangle, store_data, cache_data, rectangl
     for loc_id in final_ids:
         position_counts[visible_dict[loc_id]["position"]] += 1
 
-    if has_rectangle:
-        markers = []
-        for loc_id in final_ids:
-            cached_marker = cache_data.get(str(loc_id))
-            needs_blue = has_rectangle and loc_id in rectangle_list
-            original_color = not has_rectangle and loc_id in past_rectangle_list
+    markers = []
+    for loc_id in final_ids:
+        cached_marker = cache_data.get(str(loc_id))
+        # needs_blue = has_rectangle and loc_id in rectangle_list
+        # original_color = not has_rectangle and loc_id in past_rectangle_list
 
-            if cached_marker and not needs_blue and not original_color:
-                markers.append(cached_marker)
-                continue
+        # if cached_marker and not needs_blue and not original_color:
+        #     markers.append(cached_marker)
+        #     continue
 
-            pos = visible_dict[loc_id]["position"]
-            count = position_counts[pos]
-            jittered = jitter_coordinates(pos) if count > 1 else pos
+        if cached_marker:
+            markers.append(cached_marker)
+            continue
 
-            est = Establishment(id=loc_id, x=pos[0], y=pos[1], data_source=df)
-            is_cdb = est.get_info().get("ID_CDB")
-            
-            popup_content = (
-                html.Div([
-                    html.H4(visible_dict[loc_id]["name"], style={"margin": "5px 0", "textAlign": "center"}),
-                    html.Hr(),
-                    html.P(visible_dict[loc_id]["address"], style={"margin": "5px 0", "textAlign": "center"}),
-                ],
-                style={
-                    "border": "2px solid #007BFF",
-                    "borderRadius": "10px",
-                    "padding": "10px",
-                    "backgroundColor": "white",
-                    "boxShadow": "2px 2px 6px rgba(0,0,0,0.3)",
-                    "textAlign": "center",
-                    "width": "200px"
-                }) if is_cdb == 0 else html.Div([
-                    html.H4(visible_dict[loc_id]["name"], style={"margin": "5px 0", "textAlign": "center"}),
-                    html.Hr(),
-                    html.P(visible_dict[loc_id]["address"], style={"margin": "5px 0", "textAlign": "center"}),
-                    html.Br(),
-                    html.B("Petisco Comida di Buteco:", style={"color": "#d35400"}),
-                    html.B(f"{visible_dict[loc_id]["petisco"]}", style={"display": "block", "margin-bottom": "5px"}),
-                    html.I(visible_dict[loc_id]["descricao"], style={"display": "block", "font-size": "13px", "margin-bottom": "5px"}),
-                    html.A(
-                        html.Img(
-                            src=visible_dict[loc_id]["imagem"],
-                            style={
-                                "width": "180px",
-                                "height": "auto",
-                                "border": "2px solid #555",
-                                "border-radius": "8px",
-                                "margin-top": "8px",
-                                "box-shadow": "2px 2px 5px rgba(0,0,0,0.3)"
-                            }
-                        ),
-                        href=visible_dict[loc_id]["imagem"],
-                        target="_blank",
-                    )
-                ],
-                style={
-                    "text-align": "center",
-                    "padding": "10px",
-                    "border": "2px solid #ccc",
-                    "border-radius": "10px",
-                    "background-color": "white",
-                    "box-shadow": "2px 2px 8px rgba(0,0,0,0.2)"
-                })
-            )
+        pos = visible_dict[loc_id]["position"]
+        count = position_counts[pos]
+        jittered = jitter_coordinates(pos) if count > 1 else pos
 
-            icon_name = marker_blue if needs_blue else visible_dict[loc_id]["icon"]
-    
-            marker = dl.Marker(
-                id=f"marker-{loc_id}",
-                position=jittered,
-                icon=icon_name,
-                children=[dl.Popup(popup_content)]
-            )
-            
-            markers.append(marker)
-            cache_data[str(loc_id)] = marker
-    else: 
-        markers = []
-        for loc_id in final_ids:
-            cached_marker = cache_data.get(str(loc_id))
-            needs_blue = has_rectangle and loc_id in rectangle_list
-            original_color = not has_rectangle and loc_id in past_rectangle_list
+        est = Establishment(id=loc_id, x=pos[0], y=pos[1], data_source=df)
+        is_cdb = est.get_info().get("ID_CDB")
+        
+        popup_content = (
+            html.Div([
+                html.H4(visible_dict[loc_id]["name"], style={"margin": "5px 0", "textAlign": "center"}),
+                html.Hr(),
+                html.P(visible_dict[loc_id]["address"], style={"margin": "5px 0", "textAlign": "center"}),
+            ],
+            style={
+                "border": "2px solid #007BFF",
+                "borderRadius": "10px",
+                "padding": "10px",
+                "backgroundColor": "white",
+                "boxShadow": "2px 2px 6px rgba(0,0,0,0.3)",
+                "textAlign": "center",
+                "width": "200px"
+            }) if is_cdb == 0 else html.Div([
+                html.H4(visible_dict[loc_id]["name"], style={"margin": "5px 0", "textAlign": "center"}),
+                html.Hr(),
+                html.P(visible_dict[loc_id]["address"], style={"margin": "5px 0", "textAlign": "center"}),
+                html.Br(),
+                html.B("Petisco Comida di Buteco:", style={"color": "#d35400"}),
+                html.B(f"{visible_dict[loc_id]["petisco"]}", style={"display": "block", "margin-bottom": "5px"}),
+                html.I(visible_dict[loc_id]["descricao"], style={"display": "block", "font-size": "13px", "margin-bottom": "5px"}),
+                html.A(
+                    html.Img(
+                        src=visible_dict[loc_id]["imagem"],
+                        style={
+                            "width": "180px",
+                            "height": "auto",
+                            "border": "2px solid #555",
+                            "border-radius": "8px",
+                            "margin-top": "8px",
+                            "box-shadow": "2px 2px 5px rgba(0,0,0,0.3)"
+                        }
+                    ),
+                    href=visible_dict[loc_id]["imagem"],
+                    target="_blank",
+                )
+            ],
+            style={
+                "text-align": "center",
+                "padding": "10px",
+                "border": "2px solid #ccc",
+                "border-radius": "10px",
+                "background-color": "white",
+                "box-shadow": "2px 2px 8px rgba(0,0,0,0.2)"
+            })
+        )
 
-            if cached_marker and not needs_blue and not original_color:
-                markers.append(cached_marker)
-                continue
+        # icon_name = marker_blue if needs_blue else visible_dict[loc_id]["icon"]
+        icon_name = visible_dict[loc_id]["icon"]
 
-            pos = visible_dict[loc_id]["position"]
-            count = position_counts[pos]
-            jittered = jitter_coordinates(pos) if count > 1 else pos
-
-            est = Establishment(id=loc_id, x=pos[0], y=pos[1], data_source=df)
-            is_cdb = est.get_info().get("ID_CDB")
-            
-            popup_content = (
-                html.Div([
-                    html.H4(visible_dict[loc_id]["name"], style={"margin": "5px 0", "textAlign": "center"}),
-                    html.Hr(),
-                    html.P(visible_dict[loc_id]["address"], style={"margin": "5px 0", "textAlign": "center"}),
-                ],
-                style={
-                    "border": "2px solid #007BFF",
-                    "borderRadius": "10px",
-                    "padding": "10px",
-                    "backgroundColor": "white",
-                    "boxShadow": "2px 2px 6px rgba(0,0,0,0.3)",
-                    "textAlign": "center",
-                    "width": "200px"
-                }) if is_cdb == 0 else html.Div([
-                    html.H4(visible_dict[loc_id]["name"], style={"margin": "5px 0", "textAlign": "center"}),
-                    html.Hr(),
-                    html.P(visible_dict[loc_id]["address"], style={"margin": "5px 0", "textAlign": "center"}),
-                    html.Br(),
-                    html.B("Petisco Comida di Buteco:", style={"color": "#d35400"}),
-                    html.B(f"{visible_dict[loc_id]["petisco"]}", style={"display": "block", "margin-bottom": "5px"}),
-                    html.I(visible_dict[loc_id]["descricao"], style={"display": "block", "font-size": "13px", "margin-bottom": "5px"}),
-                    html.A(
-                        html.Img(
-                            src=visible_dict[loc_id]["imagem"],
-                            style={
-                                "width": "180px",
-                                "height": "auto",
-                                "border": "2px solid #555",
-                                "border-radius": "8px",
-                                "margin-top": "8px",
-                                "box-shadow": "2px 2px 5px rgba(0,0,0,0.3)"
-                            }
-                        ),
-                        href=visible_dict[loc_id]["imagem"],
-                        target="_blank",
-                    )
-                ],
-                style={
-                    "text-align": "center",
-                    "padding": "10px",
-                    "border": "2px solid #ccc",
-                    "border-radius": "10px",
-                    "background-color": "white",
-                    "box-shadow": "2px 2px 8px rgba(0,0,0,0.2)"
-                })
-            )
-
-            icon_name = marker_blue if needs_blue else visible_dict[loc_id]["icon"]
-    
-            marker = dl.Marker(
-                id=f"marker-{loc_id}",
-                position=jittered,
-                icon=icon_name,
-                children=[dl.Popup(popup_content)]
-            )
-            
-            markers.append(marker)
-            cache_data[str(loc_id)] = marker
+        marker = dl.Marker(
+            id=f"marker-{loc_id}",
+            position=jittered,
+            icon=icon_name,
+            children=[dl.Popup(popup_content)]
+        )
+        
+        markers.append(marker)
+        cache_data[str(loc_id)] = marker
 
     return markers, {"zoom": zoom, "ids": final_ids}, cache_data, past_rectangle_list
 
