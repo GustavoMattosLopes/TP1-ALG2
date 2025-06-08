@@ -1,4 +1,4 @@
-with open('file.txt') as file:
+with open("input.txt") as file:
     n = int(file.readline())
 
     points = []
@@ -12,7 +12,7 @@ with open('file.txt') as file:
         query = list(map(float, file.readline().split()))
         queries.append(query)
 
-with open('out.txt') as file:
+with open("output.txt") as file:
     for query in queries:
         ans, out = set(), set()
         xmin, xmax, ymin, ymax = query
@@ -27,4 +27,4 @@ with open('out.txt') as file:
                 out.add((x, y))
 
         if out != ans:
-            print('Erro')
+            print('ERRO: os pontos consultados não correspondem!')

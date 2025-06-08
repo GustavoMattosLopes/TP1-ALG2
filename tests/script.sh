@@ -7,7 +7,7 @@ while true; do
     python3 gen.py
 
     echo "Running test.py..."
-    python3 test.py < file.txt > out.txt
+    python3 test.py < input.txt > output.txt
 
     echo "Running check.py..."
     output=$(python3 check.py)
