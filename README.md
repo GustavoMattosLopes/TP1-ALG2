@@ -6,6 +6,8 @@ Este projeto implementa um sistema interativo para visualização e filtragem de
 
 🔗 Acesse o sistema aqui: [tp1-alg2-uq38.onrender.com](https://tp1-alg2-uq38.onrender.com/)
 
+> 🐢 **Aviso:** O host pode ser um pouco lento, então tenha paciência e espere o **zoom do mapa** carregar direitinho! 😄
+
 ---
 
 ## 🧭 Descrição do Projeto
