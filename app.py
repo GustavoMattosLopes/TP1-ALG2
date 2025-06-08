@@ -434,4 +434,4 @@ def update_markers(zoom, bounds, has_rectangle, store_data, cache_data, rectangl
     return markers, {"zoom": zoom, "ids": final_ids}, cache_data, past_rectangle_list
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run_server(debug=True)
