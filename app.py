@@ -322,7 +322,6 @@ def update_markers(zoom, bounds, has_rectangle, store_data, cache_data, rectangl
     lon_margin = (lon_e - lon_w) * 0.3
 
     print("1", type(locs), type(locs[0]), locs[0])
-    
 
     if has_rectangle:
         visible = [
@@ -360,12 +359,6 @@ def update_markers(zoom, bounds, has_rectangle, store_data, cache_data, rectangl
     markers = []
     for loc_id in final_ids:
         cached_marker = cache_data.get(str(loc_id))
-        # needs_blue = has_rectangle and loc_id in rectangle_list
-        # original_color = not has_rectangle and loc_id in past_rectangle_list
-
-        # if cached_marker and not needs_blue and not original_color:
-        #     markers.append(cached_marker)
-        #     continue
 
         if cached_marker:
             markers.append(cached_marker)
@@ -426,7 +419,6 @@ def update_markers(zoom, bounds, has_rectangle, store_data, cache_data, rectangl
             })
         )
 
-        # icon_name = marker_blue if needs_blue else visible_dict[loc_id]["icon"]
         icon_name = visible_dict[loc_id]["icon"]
 
         marker = dl.Marker(
