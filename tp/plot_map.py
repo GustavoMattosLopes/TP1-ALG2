@@ -272,45 +272,6 @@ app.layout = html.Div([
 # === Callbacks Dash ===
 # ====================
 
-
-
-# @app.callback(
-#     Output("list-all-info", "children"),
-#     Output("rectangle-list", "data"),
-#     Output("has-rectangle", "data"),
-#     Input("map", "zoom"),
-#     Input("edit_control", "geojson"),
-#     State("list-all-info", "children"),
-#     prevent_initial_call=True
-# )
-# def update_establishments_info(zoom, feature_collection, actual):
-#     global rectangle_list_g
-#     if feature_collection is None or not feature_collection.get("features"):
-#         return generate_establishments_info([]), [], False  
-    
-#     rectangles = []
-#     for feature in feature_collection["features"]:
-#         geometry = feature.get("geometry", {})
-#         if geometry.get("type") == "Polygon":
-#             coordinates = geometry.get("coordinates", [])
-#             if coordinates:
-#                 rectangles.append(coordinates[0])
-
-#     if(len(rectangles) > 1):
-#         return actual
-    
-#     xmax = max(rectangles[0], key=lambda x: x[1])[1]
-#     xmin = min(rectangles[0], key=lambda x: x[1])[1]
-#     ymax = max(rectangles[0], key=lambda x: x[0])[0]
-#     ymin = min(rectangles[0], key=lambda x: x[0])[0]
-
-#     establishments_query = kdtree.query(Rectangle(xmin, xmax, ymin, ymax)) # retorna uma lista de establishments
-#     rectangle_list_g = establishments_query.copy()
-#     ids_in_rectangle = [e.id for e in establishments_query]
-
-#     return generate_establishments_info(establishments_query), ids_in_rectangle, True
-
-
 @app.callback(
     Output("list-all-info", "children"),
     Output("rectangle-list", "data"),
@@ -394,22 +355,6 @@ def update_markers(zoom, bounds, has_rectangle, store_data, cache_data, rectangl
             (lon_w - lon_margin) <= loc["position"][1] <= (lon_e + lon_margin)
         ]
 
-    # visible_dict = {loc["id"]: loc for loc in visible}
-    # visible_ids = set(visible_dict)
-
-    # store_data = store_data or {"zoom": zoom, "ids": []}
-    # cache_data = cache_data or {"zoom": zoom, "ids": []}
-    # prev_zoom = store_data.get("zoom", zoom)
-    # current_ids = set(store_data.get("ids", []))
-
-    # thresholds = {12: 20, 14: 50, 16: 75, 17: 100}
-    # max_n = next((v for k, v in sorted(thresholds.items()) if zoom <= k), None)
-
-    # reused_ids = current_ids & visible_ids if zoom >= prev_zoom else set()
-    # new_candidates = list(visible_ids - reused_ids)
-    # selected_new_ids = random.sample(new_candidates, min(max_n - len(reused_ids), len(new_candidates))) if max_n else new_candidates
-    # final_ids = list(reused_ids) + selected_new_ids
-
     visible_dict = {loc["id"]: loc for loc in visible}
     visible_ids = set(visible_dict)
 
@@ -421,23 +366,10 @@ def update_markers(zoom, bounds, has_rectangle, store_data, cache_data, rectangl
     thresholds = {12: 20, 14: 50, 16: 75, 17: 100}
     max_n = next((v for k, v in sorted(thresholds.items()) if zoom <= k), None)
 
-    # Interseção: IDs que continuam visíveis e eram usados
     reused_ids = current_ids & visible_ids if zoom >= prev_zoom else set()
-
-    # Apenas os novos visíveis
     new_candidates = list(visible_ids - reused_ids)
-
-    # Seleção dos novos, respeitando o limite de quantidade (max_n)
-    selected_new_ids = (
-        random.sample(new_candidates, min(max_n - len(reused_ids), len(new_candidates)))
-        if max_n else new_candidates
-    )
-
-    # Resultado final: apenas IDs que estão garantidamente em visible_dict
+    selected_new_ids = random.sample(new_candidates, min(max_n - len(reused_ids), len(new_candidates))) if max_n else new_candidates
     final_ids = list(reused_ids) + selected_new_ids
-
-    # Garante que todos os dados selecionados estejam no visible_dict
-    final_data = [visible_dict[i] for i in final_ids if i in visible_dict]
 
     position_counts = defaultdict(int)
     for loc_id in final_ids:
