@@ -15,6 +15,37 @@ class Establishment:
             self.data = rows.iloc[0].to_dict() if isinstance(rows, pd.DataFrame) else rows.to_dict()
             self._loaded = True
 
+    @property
+    def name(self):
+        self.load_data()
+        return self.data.get("name") if self.data else None
+
+    @property
+    def lat(self):
+        self.load_data()
+        return self.data.get("lat") if self.data else self.y
+
+    @property
+    def lon(self):
+        self.load_data()
+        return self.data.get("lon") if self.data else self.x
+
+    def to_dict(self):
+        return {
+            "name": self.name,
+            "lat": self.lat,
+            "lon": self.lon
+        }
+
+    @classmethod
+    def from_dict(cls, data):
+        return cls(
+            id=data.get("id"),  # lembre de incluir o id aqui se precisar
+            x=data.get("lon"),
+            y=data.get("lat"),
+            data_source=None  # ou repassar seu data_source se precisar
+        )
+
     def get_info(self):
         self.load_data()
         return self.data

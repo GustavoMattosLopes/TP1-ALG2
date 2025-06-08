@@ -33,6 +33,15 @@ marker_red = {
     "shadowSize": [41, 41]
 }
 
+marker_yellow = {
+    "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-yellow.png",
+    "shadowUrl": "https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png",
+    "iconSize": [25, 41],
+    "iconAnchor": [12, 41],
+    "popupAnchor": [1, -34],
+    "shadowSize": [41, 41]
+}
+
 marker_blue = {
     "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
     "shadowUrl": "https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png",
@@ -42,17 +51,16 @@ marker_blue = {
     "shadowSize": [41, 41]
 }
 
-exist_rectangles = False
-rectangle_list = []
+marker_gray = {
+    "iconUrl": "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-grey.png",
+    "shadowUrl": "https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png",
+    "iconSize": [25, 41],
+    "iconAnchor": [12, 41],
+    "popupAnchor": [1, -34],
+    "shadowSize": [41, 41]
+}
 
-
-# Pontos fixos para teste do retângulo
-establishments_list = [
-    Establishment(id=1023, x=-19.92, y=-43.94, data_source=df),
-    Establishment(id=123, x=-19.9242, y=-43.9442, data_source=df),
-    Establishment(id=60651, x=-19.9243, y=-43.9445, data_source=df)
-]
-
+rectangle_list_g = []
 establishments = []
 
 # ========================
@@ -84,6 +92,33 @@ def format_address(addr):
         addr = addr.replace(prep, prep.lower())
     return re.sub(r'\bMg\b', "MG", addr)
 
+def establishment_to_dict(est: Establishment, df, cdb, marker_gray, marker_red):
+    row = df.loc[est.id]
+    if isinstance(row, pd.DataFrame):
+        row = row.iloc[0] 
+    base = {
+        "id": est.id,
+        "position": (est.x, est.y),
+        "name": row.get("NOME_FANTASIA", "Desconhecido"),
+        "icon": marker_gray,
+        "address": row.get("ENDERECO_COMPLETO", "Desconhecido"),
+    }
+
+    if int(row["ID_CDB"]) > 0:
+        try:
+            cdb_row = cdb.iloc[int(row["ID_CDB"]) - 1]
+            base.update({
+                "icon": marker_red,
+                "petisco": cdb_row.get("PETISCO", "Desconhecido"),
+                "descricao": cdb_row.get("DESCRICAO", "Desconhecido"),
+                "imagem": cdb_row.get("IMAGEM", "Desconhecido")
+            })
+        except IndexError:
+            print(f"[ERRO] ID_CDB fora do range do iloc: {row['ID_CDB']}")
+            print(f"Total de linhas no DataFrame cdb: {len(cdb)}")
+
+    return base
+
 # =========================
 # === Dados dos pontos ===
 # =========================
@@ -100,7 +135,7 @@ for idx, row in df.iterrows():
                 "id": idx,
                 "position": coord,
                 "name": row.get("NOME_FANTASIA", "Desconhecido"),
-                "icon": marker_blue,
+                "icon": marker_gray,
                 "address": row.get("ENDERECO_COMPLETO", "Desconhecido")
             })
         else:
@@ -132,10 +167,27 @@ kdtree = KdTree(establishments)
 # info para os estabelecimentos selecionados
 def generate_establishments_info(establishment_list):
     def make_card(info):
-        nome = info.get("NOME_FANTASIA", "Nome não disponível").title()
-        addr = format_address(info.get("ENDERECO_COMPLETO", "Endereço não disponível"))
-        data_inicio = info.get("DATA_INICIO_ATIVIDADE", "").replace("-", "/") or "Data não disponível"
-        alvara_raw = info.get("IND_POSSUI_ALVARA", "Não informado").lower()
+        # Nome
+        nome_raw = info.get("NOME_FANTASIA")
+        nome = nome_raw.title() if isinstance(nome_raw, str) else "Nome não disponível"
+
+        # Endereço
+        endereco_raw = info.get("ENDERECO_COMPLETO")
+        addr = format_address(endereco_raw if isinstance(endereco_raw, str) else "Endereço não disponível")
+
+        # Data de início
+        data_inicio_raw = info.get("DATA_INICIO_ATIVIDADE")
+        if isinstance(data_inicio_raw, str):
+            data_inicio = data_inicio_raw.replace("-", "/") or "Data não disponível"
+        else:
+            data_inicio = "Data não disponível"
+
+        # Alvará
+        alvara_raw = info.get("IND_POSSUI_ALVARA")
+        if isinstance(alvara_raw, str):
+            alvara_raw = alvara_raw.lower()
+        else:
+            alvara_raw = "não informado"
         possui_alvara = {
             "sim": "✅ Sim",
             "não": "❌ Não"
@@ -150,6 +202,15 @@ def generate_establishments_info(establishment_list):
         ], style={'padding': '15px', 'backgroundColor': '#fefefe', 'borderRadius': '8px', 'marginBottom': '15px', 'boxShadow': '0px 2px 8px rgba(0, 0, 0, 0.07)', 'fontFamily': 'Segoe UI, sans-serif'})
 
     cards = [make_card(est.get_info()) for est in establishment_list if est.get_info()]
+
+    if not cards:
+        return html.Div("Não há área selecionada", style={
+            'padding': '20px',
+            'textAlign': 'center',
+            'color': '#7f8c8d',
+            'fontStyle': 'italic',
+            'fontFamily': 'Segoe UI, sans-serif'
+        })
     return html.Div(cards, style={'maxHeight': '60vh', 'overflowY': 'auto', 'padding': '10px', 'border': '1px solid #eee', 'borderRadius': '8px', 'backgroundColor': '#ffffff', 'fontFamily': 'Segoe UI, sans-serif'})
 
 # =====================
@@ -161,6 +222,9 @@ app = dash.Dash(__name__, suppress_callback_exceptions=True)
 app.layout = html.Div([
     dcc.Store(id="store-random-ids", data={"zoom": 0, "ids": []}),
     dcc.Store(id="store-markers-cache", data={}),
+    dcc.Store(id="rectangle-list", data=[]),
+    dcc.Store(id="past-rectangle-list", data=[]),
+    dcc.Store(id="has-rectangle", data=False),
     html.Link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap", rel="stylesheet"),
 
     html.Div([
@@ -210,8 +274,47 @@ app.layout = html.Div([
 
 
 
+# @app.callback(
+#     Output("list-all-info", "children"),
+#     Output("rectangle-list", "data"),
+#     Output("has-rectangle", "data"),
+#     Input("map", "zoom"),
+#     Input("edit_control", "geojson"),
+#     State("list-all-info", "children"),
+#     prevent_initial_call=True
+# )
+# def update_establishments_info(zoom, feature_collection, actual):
+#     global rectangle_list_g
+#     if feature_collection is None or not feature_collection.get("features"):
+#         return generate_establishments_info([]), [], False  
+    
+#     rectangles = []
+#     for feature in feature_collection["features"]:
+#         geometry = feature.get("geometry", {})
+#         if geometry.get("type") == "Polygon":
+#             coordinates = geometry.get("coordinates", [])
+#             if coordinates:
+#                 rectangles.append(coordinates[0])
+
+#     if(len(rectangles) > 1):
+#         return actual
+    
+#     xmax = max(rectangles[0], key=lambda x: x[1])[1]
+#     xmin = min(rectangles[0], key=lambda x: x[1])[1]
+#     ymax = max(rectangles[0], key=lambda x: x[0])[0]
+#     ymin = min(rectangles[0], key=lambda x: x[0])[0]
+
+#     establishments_query = kdtree.query(Rectangle(xmin, xmax, ymin, ymax)) # retorna uma lista de establishments
+#     rectangle_list_g = establishments_query.copy()
+#     ids_in_rectangle = [e.id for e in establishments_query]
+
+#     return generate_establishments_info(establishments_query), ids_in_rectangle, True
+
+
 @app.callback(
     Output("list-all-info", "children"),
+    Output("rectangle-list", "data"),
+    Output("has-rectangle", "data"),
     Input("map", "zoom"),
     Input("edit_control", "geojson"),
     State("list-all-info", "children"),
@@ -219,11 +322,10 @@ app.layout = html.Div([
 )
 
 def update_establishments_info(zoom, feature_collection, actual):
-    global rectangle_list
+    global rectangle_list_g
     global exist_rectangles
     if feature_collection is None or not feature_collection.get("features"):
-        exist_rectangles = False
-        return actual
+        return generate_establishments_info([]), [], False
     
     rectangles = []
     for feature in feature_collection["features"]:
@@ -242,34 +344,71 @@ def update_establishments_info(zoom, feature_collection, actual):
     ymin = min(rectangles[0], key=lambda x: x[0])[0]
 
     establishments_query = kdtree.query(Rectangle(xmin, xmax, ymin, ymax))
-    rectangle_list = establishments_query.copy()
-    exist_rectangles = True
+    rectangle_list_g = establishments_query.copy()
+    rectangle_list_g = [
+        establishment_to_dict(est, df, cdb, marker_gray, marker_red)
+        for est in establishments_query
+    ]
+    ids_in_rectangle = [e.id for e in establishments_query]
 
-    return generate_establishments_info(establishments_query)
+    return generate_establishments_info(establishments_query), ids_in_rectangle, True
 
 @app.callback(
     Output("markers", "children"),
     Output("store-random-ids", "data"),
     Output("store-markers-cache", "data"),
+    Output("past-rectangle-list", "data"),
     Input("map", "zoom"),
     Input("map", "bounds"),
+    Input("has-rectangle", "data"),
     State("store-random-ids", "data"),
-    State("store-markers-cache", "data")
+    State("store-markers-cache", "data"),
+    State("rectangle-list", "data"),
+    State("past-rectangle-list", "data")
 )
-def update_markers(zoom, bounds, store_data, cache_data):
+def update_markers(zoom, bounds, has_rectangle, store_data, cache_data, rectangle_list, past_rectangle_list):
     if not zoom or not bounds:
-        return [], {"zoom": zoom, "ids": []}, []
+        return [], {"zoom": zoom, "ids": []}, [], []
+    
+    if has_rectangle:
+        past_rectangle_list = rectangle_list.copy()
 
     lat_s, lon_w = bounds[0]
     lat_n, lon_e = bounds[1]
     lat_margin = (lat_n - lat_s) * 0.3
     lon_margin = (lon_e - lon_w) * 0.3
 
-    visible = [
-        loc for loc in locs
-        if (lat_s - lat_margin) <= loc["position"][0] <= (lat_n + lat_margin) and
-           (lon_w - lon_margin) <= loc["position"][1] <= (lon_e + lon_margin)
-    ]
+    print("1", type(locs), type(locs[0]), locs[0])
+    
+
+    if has_rectangle:
+        visible = [
+            loc for loc in rectangle_list_g
+            if (lat_s - lat_margin) <= loc["position"][0] <= (lat_n + lat_margin) and
+            (lon_w - lon_margin) <= loc["position"][1] <= (lon_e + lon_margin)
+        ]
+    else:
+        visible = [
+            loc for loc in locs
+            if (lat_s - lat_margin) <= loc["position"][0] <= (lat_n + lat_margin) and
+            (lon_w - lon_margin) <= loc["position"][1] <= (lon_e + lon_margin)
+        ]
+
+    # visible_dict = {loc["id"]: loc for loc in visible}
+    # visible_ids = set(visible_dict)
+
+    # store_data = store_data or {"zoom": zoom, "ids": []}
+    # cache_data = cache_data or {"zoom": zoom, "ids": []}
+    # prev_zoom = store_data.get("zoom", zoom)
+    # current_ids = set(store_data.get("ids", []))
+
+    # thresholds = {12: 20, 14: 50, 16: 75, 17: 100}
+    # max_n = next((v for k, v in sorted(thresholds.items()) if zoom <= k), None)
+
+    # reused_ids = current_ids & visible_ids if zoom >= prev_zoom else set()
+    # new_candidates = list(visible_ids - reused_ids)
+    # selected_new_ids = random.sample(new_candidates, min(max_n - len(reused_ids), len(new_candidates))) if max_n else new_candidates
+    # final_ids = list(reused_ids) + selected_new_ids
 
     visible_dict = {loc["id"]: loc for loc in visible}
     visible_ids = set(visible_dict)
@@ -282,86 +421,184 @@ def update_markers(zoom, bounds, store_data, cache_data):
     thresholds = {12: 20, 14: 50, 16: 75, 17: 100}
     max_n = next((v for k, v in sorted(thresholds.items()) if zoom <= k), None)
 
+    # Interseção: IDs que continuam visíveis e eram usados
     reused_ids = current_ids & visible_ids if zoom >= prev_zoom else set()
+
+    # Apenas os novos visíveis
     new_candidates = list(visible_ids - reused_ids)
-    selected_new_ids = random.sample(new_candidates, min(max_n - len(reused_ids), len(new_candidates))) if max_n else new_candidates
+
+    # Seleção dos novos, respeitando o limite de quantidade (max_n)
+    selected_new_ids = (
+        random.sample(new_candidates, min(max_n - len(reused_ids), len(new_candidates)))
+        if max_n else new_candidates
+    )
+
+    # Resultado final: apenas IDs que estão garantidamente em visible_dict
     final_ids = list(reused_ids) + selected_new_ids
+
+    # Garante que todos os dados selecionados estejam no visible_dict
+    final_data = [visible_dict[i] for i in final_ids if i in visible_dict]
 
     position_counts = defaultdict(int)
     for loc_id in final_ids:
         position_counts[visible_dict[loc_id]["position"]] += 1
 
-    markers = []
-    for loc_id in final_ids:
-        if str(loc_id) in cache_data:
-            markers.append(cache_data[str(loc_id)])
-            continue
-        pos = visible_dict[loc_id]["position"]
-        count = position_counts[pos]
-        jittered = jitter_coordinates(pos) if count > 1 else pos
+    if has_rectangle:
+        markers = []
+        for loc_id in final_ids:
+            cached_marker = cache_data.get(str(loc_id))
+            needs_blue = has_rectangle and loc_id in rectangle_list
+            original_color = not has_rectangle and loc_id in past_rectangle_list
 
-        est = Establishment(id=loc_id, x=pos[0], y=pos[1], data_source=df)
-        is_cdb = est.get_info().get("ID_CDB")
+            if cached_marker and not needs_blue and not original_color:
+                markers.append(cached_marker)
+                continue
 
-        popup_content = (
-            html.Div([
-                html.H4(visible_dict[loc_id]["name"], style={"margin": "5px 0", "textAlign": "center"}),
-                html.Hr(),
-                html.P(visible_dict[loc_id]["address"], style={"margin": "5px 0", "textAlign": "center"}),
-            ],
-            style={
-                "border": "2px solid #007BFF",
-                "borderRadius": "10px",
-                "padding": "10px",
-                "backgroundColor": "white",
-                "boxShadow": "2px 2px 6px rgba(0,0,0,0.3)",
-                "textAlign": "center",
-                "width": "200px"
-            }) if is_cdb == 0 else html.Div([
-                html.H4(visible_dict[loc_id]["name"], style={"margin": "5px 0", "textAlign": "center"}),
-                html.Hr(),
-                html.P(visible_dict[loc_id]["address"], style={"margin": "5px 0", "textAlign": "center"}),
-                html.Br(),
-                html.B("Petisco Comida di Buteco:", style={"color": "#d35400"}),
-                html.B(f"{visible_dict[loc_id]["petisco"]}", style={"display": "block", "margin-bottom": "5px"}),
-                html.I(visible_dict[loc_id]["descricao"], style={"display": "block", "font-size": "13px", "margin-bottom": "5px"}),
-                html.A(
-                    html.Img(
-                        src=visible_dict[loc_id]["imagem"],
-                        style={
-                            "width": "180px",
-                            "height": "auto",
-                            "border": "2px solid #555",
-                            "border-radius": "8px",
-                            "margin-top": "8px",
-                            "box-shadow": "2px 2px 5px rgba(0,0,0,0.3)"
-                        }
-                    ),
-                    href=visible_dict[loc_id]["imagem"],
-                    target="_blank",
-                )
-            ],
-            style={
-                "text-align": "center",
-                "padding": "10px",
-                "border": "2px solid #ccc",
-                "border-radius": "10px",
-                "background-color": "white",
-                "box-shadow": "2px 2px 8px rgba(0,0,0,0.2)"
-            })
-        )
+            pos = visible_dict[loc_id]["position"]
+            count = position_counts[pos]
+            jittered = jitter_coordinates(pos) if count > 1 else pos
 
-        marker = dl.Marker(
-            id=f"marker-{loc_id}",
-            position=jittered,
-            icon=visible_dict[loc_id]["icon"],
-            children=[dl.Popup(popup_content)]
-        )
-        
-        markers.append(marker)
-        cache_data[str(loc_id)] = marker
+            est = Establishment(id=loc_id, x=pos[0], y=pos[1], data_source=df)
+            is_cdb = est.get_info().get("ID_CDB")
+            
+            popup_content = (
+                html.Div([
+                    html.H4(visible_dict[loc_id]["name"], style={"margin": "5px 0", "textAlign": "center"}),
+                    html.Hr(),
+                    html.P(visible_dict[loc_id]["address"], style={"margin": "5px 0", "textAlign": "center"}),
+                ],
+                style={
+                    "border": "2px solid #007BFF",
+                    "borderRadius": "10px",
+                    "padding": "10px",
+                    "backgroundColor": "white",
+                    "boxShadow": "2px 2px 6px rgba(0,0,0,0.3)",
+                    "textAlign": "center",
+                    "width": "200px"
+                }) if is_cdb == 0 else html.Div([
+                    html.H4(visible_dict[loc_id]["name"], style={"margin": "5px 0", "textAlign": "center"}),
+                    html.Hr(),
+                    html.P(visible_dict[loc_id]["address"], style={"margin": "5px 0", "textAlign": "center"}),
+                    html.Br(),
+                    html.B("Petisco Comida di Buteco:", style={"color": "#d35400"}),
+                    html.B(f"{visible_dict[loc_id]["petisco"]}", style={"display": "block", "margin-bottom": "5px"}),
+                    html.I(visible_dict[loc_id]["descricao"], style={"display": "block", "font-size": "13px", "margin-bottom": "5px"}),
+                    html.A(
+                        html.Img(
+                            src=visible_dict[loc_id]["imagem"],
+                            style={
+                                "width": "180px",
+                                "height": "auto",
+                                "border": "2px solid #555",
+                                "border-radius": "8px",
+                                "margin-top": "8px",
+                                "box-shadow": "2px 2px 5px rgba(0,0,0,0.3)"
+                            }
+                        ),
+                        href=visible_dict[loc_id]["imagem"],
+                        target="_blank",
+                    )
+                ],
+                style={
+                    "text-align": "center",
+                    "padding": "10px",
+                    "border": "2px solid #ccc",
+                    "border-radius": "10px",
+                    "background-color": "white",
+                    "box-shadow": "2px 2px 8px rgba(0,0,0,0.2)"
+                })
+            )
 
-    return markers, {"zoom": zoom, "ids": final_ids}, cache_data
+            icon_name = marker_blue if needs_blue else visible_dict[loc_id]["icon"]
+    
+            marker = dl.Marker(
+                id=f"marker-{loc_id}",
+                position=jittered,
+                icon=icon_name,
+                children=[dl.Popup(popup_content)]
+            )
+            
+            markers.append(marker)
+            cache_data[str(loc_id)] = marker
+    else: 
+        markers = []
+        for loc_id in final_ids:
+            cached_marker = cache_data.get(str(loc_id))
+            needs_blue = has_rectangle and loc_id in rectangle_list
+            original_color = not has_rectangle and loc_id in past_rectangle_list
+
+            if cached_marker and not needs_blue and not original_color:
+                markers.append(cached_marker)
+                continue
+
+            pos = visible_dict[loc_id]["position"]
+            count = position_counts[pos]
+            jittered = jitter_coordinates(pos) if count > 1 else pos
+
+            est = Establishment(id=loc_id, x=pos[0], y=pos[1], data_source=df)
+            is_cdb = est.get_info().get("ID_CDB")
+            
+            popup_content = (
+                html.Div([
+                    html.H4(visible_dict[loc_id]["name"], style={"margin": "5px 0", "textAlign": "center"}),
+                    html.Hr(),
+                    html.P(visible_dict[loc_id]["address"], style={"margin": "5px 0", "textAlign": "center"}),
+                ],
+                style={
+                    "border": "2px solid #007BFF",
+                    "borderRadius": "10px",
+                    "padding": "10px",
+                    "backgroundColor": "white",
+                    "boxShadow": "2px 2px 6px rgba(0,0,0,0.3)",
+                    "textAlign": "center",
+                    "width": "200px"
+                }) if is_cdb == 0 else html.Div([
+                    html.H4(visible_dict[loc_id]["name"], style={"margin": "5px 0", "textAlign": "center"}),
+                    html.Hr(),
+                    html.P(visible_dict[loc_id]["address"], style={"margin": "5px 0", "textAlign": "center"}),
+                    html.Br(),
+                    html.B("Petisco Comida di Buteco:", style={"color": "#d35400"}),
+                    html.B(f"{visible_dict[loc_id]["petisco"]}", style={"display": "block", "margin-bottom": "5px"}),
+                    html.I(visible_dict[loc_id]["descricao"], style={"display": "block", "font-size": "13px", "margin-bottom": "5px"}),
+                    html.A(
+                        html.Img(
+                            src=visible_dict[loc_id]["imagem"],
+                            style={
+                                "width": "180px",
+                                "height": "auto",
+                                "border": "2px solid #555",
+                                "border-radius": "8px",
+                                "margin-top": "8px",
+                                "box-shadow": "2px 2px 5px rgba(0,0,0,0.3)"
+                            }
+                        ),
+                        href=visible_dict[loc_id]["imagem"],
+                        target="_blank",
+                    )
+                ],
+                style={
+                    "text-align": "center",
+                    "padding": "10px",
+                    "border": "2px solid #ccc",
+                    "border-radius": "10px",
+                    "background-color": "white",
+                    "box-shadow": "2px 2px 8px rgba(0,0,0,0.2)"
+                })
+            )
+
+            icon_name = marker_blue if needs_blue else visible_dict[loc_id]["icon"]
+    
+            marker = dl.Marker(
+                id=f"marker-{loc_id}",
+                position=jittered,
+                icon=icon_name,
+                children=[dl.Popup(popup_content)]
+            )
+            
+            markers.append(marker)
+            cache_data[str(loc_id)] = marker
+
+    return markers, {"zoom": zoom, "ids": final_ids}, cache_data, past_rectangle_list
 
 if __name__ == '__main__':
     app.run(debug=True)
