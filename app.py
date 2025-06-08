@@ -200,6 +200,7 @@ def generate_establishments_info(establishment_list):
 # =====================
 
 app = dash.Dash(__name__, suppress_callback_exceptions=True)
+server = app.server
 
 app.layout = html.Div([
     dcc.Store(id="store-random-ids", data={"zoom": 0, "ids": []}),
@@ -434,4 +435,4 @@ def update_markers(zoom, bounds, has_rectangle, store_data, cache_data, rectangl
     return markers, {"zoom": zoom, "ids": final_ids}, cache_data, past_rectangle_list
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
