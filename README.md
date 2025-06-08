@@ -2,7 +2,7 @@
 
 Este projeto implementa um sistema interativo para visualização e filtragem de bares e restaurantes registrados na base de dados da Prefeitura de Belo Horizonte (PBH). O sistema utiliza um mapa interativo que permite selecionar áreas retangulares para consulta ortogonal, retornando os estabelecimentos dentro dessa região.
 
-![Imagem do Programa](imagens/img-app.jpeg)
+![Imagem do Programa](images/img-app.jpeg)
 
 🔗 Acesse o sistema aqui: [tp1-alg2-uq38.onrender.com](https://tp1-alg2-uq38.onrender.com/)
 
@@ -43,25 +43,25 @@ O sistema desenvolvido tem como objetivo permitir aos usuários:
 
 - ✅ Mapa interativo com suporte a **zoom**, essencial para visualização eficiente de mais de **13 mil pontos**:
 
-  ![Zoom no mapa](imagens/zoom.png)
+  ![Zoom no mapa](images/img-zoom.jpeg)
 
 - ✅ Pop-ups com os dados dos bares do **Comida di Buteco** com marcadores **vermelhos**:
 
-  ![Zoom no mapa](imagens/img-cbd-example.jpeg)
+  ![Zoom no mapa](images/img-cbd-example.jpeg)
 
 - ✅ Ferramenta de **seleção retangular** sobre o mapa para realizar consultas espaciais:
 
-  ![Seleção retangular](imagens/img-where-draw.jpeg)
+  ![Seleção retangular](images/img-where-draw.jpeg)
 
-  ![Seleção retangular](imagens/img-rectangle-example.jpeg)
+  ![Seleção retangular](images/img-rectangle-example.jpeg)
 
 - ✅ Tabela interativa com os resultados dos estabelecimentos **dentro da área selecionada**:
 
-  ![Tabela de resultados](imagens/img-where-selected.jpeg)
+  ![Tabela de resultados](images/img-where-selected.jpeg)
 
 - ✅ Botão de **limpar seleção** para redefinir a área e restaurar a exibição total:
 
-  ![Botão limpar](imagens/limpar.png)
+  ![Botão limpar](images/limpar.png)
 
 ---
 
