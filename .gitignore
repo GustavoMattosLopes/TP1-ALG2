@@ -2,3 +2,4 @@ data/20250401_atividade_economica.csv
 __pycache__/
 *.py[cod]
 *.log
+.venv

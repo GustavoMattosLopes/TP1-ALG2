@@ -279,7 +279,7 @@ def update_establishments_info(zoom, feature_collection, actual):
                 rectangles.append(coordinates[0])
 
     if(len(rectangles) > 1):
-        return actual
+        return dash.no_update
     
     xmax = max(rectangles[0], key=lambda x: x[1])[1]
     xmin = min(rectangles[0], key=lambda x: x[1])[1]
